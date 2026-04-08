@@ -101,7 +101,7 @@ STALK/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
-
+```
 ---
 
 ## 👤 Author
