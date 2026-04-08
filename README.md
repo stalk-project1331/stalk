@@ -1,6 +1,4 @@
-from pathlib import Path
-
-content = r"""<div align="center">
+<div align="center">
 
 # 🕵️ STALK
 ### OSINT Assistant Desktop Application
