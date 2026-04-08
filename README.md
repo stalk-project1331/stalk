@@ -17,8 +17,6 @@
 
 ---
 
-# English
-
 ## 📌 Overview
 
 **STALK** is a desktop OSINT assistant built with **Electron**, **React**, **Vite**, and **Tailwind CSS**.
@@ -104,3 +102,10 @@ STALK/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
+
+---
+
+## License
+
+Licensed under the GNU AGPL v3.0.  
+Copyright (C) 2026 Luka / [stalk.ge](https://stalk.ge)
