@@ -1,7 +1,10 @@
 <div align="center">
 
-# 🕵️ STALK
+<img src="https://raw.githubusercontent.com/stalk-project1331/stalk/main/assets/STALK.ico" width="96" alt="STALK logo" />
+
+# STALK
 ### OSINT Assistant Desktop Application
+
 
 ![Electron](https://img.shields.io/badge/Electron-desktop-2b2e3a?logo=electron)
 ![Vite](https://img.shields.io/badge/Vite-fast-purple?logo=vite)
