@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "code": "ar",
+    "name": "العربية",
+    "nativeName": "العربية",
+    "intlLocale": "ar-SA"
+  },
+  "app": {
+    "greetings": [
+      "مرحباً بك في STALK",
+      "مرحباً بعودتك إلى STALK"
+    ],
+    "menu": {
+      "board": "اللوحة",
+      "reports": "التقارير",
+      "exif": "بيانات EXIF",
+      "api": "API",
+      "settings": "الإعدادات",
+      "about": "حول التطبيق"
+    },
+    "actions": {
+      "hideMenu": "إخفاء القائمة",
+      "showMenu": "إظهار القائمة",
+      "home": "الذهاب إلى الرئيسية"
+    },
+    "window": {
+      "minimize": "تصغير",
+      "maximize": "تكبير",
+      "close": "إغلاق"
+    },
+    "errors": {
+      "componentNotFound": "المكون غير موجود"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "sound": {
+      "label": "أصوات التطبيق"
+    },
+    "language": {
+      "title": "اللغة",
+      "label": "لغة الواجهة",
+      "hint": "يتم تطبيق التغييرات فوراً. أضف ملف لغة جديد في src/i18n/locales ليظهر هنا."
+    },
+    "boardEdges": {
+      "title": "روابط اللوحة",
+      "style": "نمط الخط",
+      "width": "عرض الخط",
+      "opacity": "الشفافية",
+      "glow": "التوهج",
+      "dashed": "متقطع",
+      "preview": "معاينة",
+      "styles": {
+        "curved": "منحني",
+        "straight": "مستقيم"
+      }
+    },
+    "apiServices": "خدمات API",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "احفظ مفتاح API الخاص بك لـ",
+      "descriptionAfterLink": ". بعد الحفظ، سيظهر قسم API في القائمة.",
+      "statusSaved": "تم حفظ المفتاح",
+      "statusEmpty": "المفتاح غير معين",
+      "apiKeyLabel": "مفتاح API",
+      "apiKeyPlaceholder": "أدخل مفتاح NightSearch API",
+      "showKey": "إظهار المفتاح",
+      "hideKey": "إخفاء المفتاح",
+      "save": "حفظ",
+      "delete": "حذف",
+      "savedMessage": "تم حفظ مفتاح NightSearch",
+      "emptyMessage": "الحقل فارغ",
+      "saveError": "فشل حفظ المفتاح",
+      "deletedMessage": "تم حذف مفتاح NightSearch",
+      "deleteError": "فشل حذف المفتاح"
+    },
+    "future": {
+      "title": "إعدادات مستقبلية",
+      "description": "تم الاحتفاظ بهذا القسم كإطار للتحديثات القادمة: الواجهة، سلوك اللوحة، التصدير، مفاتيح الاختصار، ومعايير أخرى."
+    },
+    "reload": "إعادة تحميل التطبيق"
+  },
+  "board": {
+    "entities": {
+      "person": "شخص",
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "domain": "النطاق",
+      "ip": "عنوان IP",
+      "location": "الموقع",
+      "company": "الشركة",
+      "event": "حدث",
+      "task": "مهمة",
+      "fact": "حقيقة",
+      "image": "صورة",
+      "note": "ملاحظة",
+      "custom": "مخصص"
+    },
+    "colors": {
+      "byType": "حسب النوع"
+    },
+    "statuses": {
+      "none": "بدون حالة",
+      "new": "جديد",
+      "in_progress": "قيد التنفيذ",
+      "verified": "تم التحقق",
+      "warning": "مخاطرة",
+      "done": "تم الإنجاز",
+      "archived": "مؤرشف"
+    },
+    "messages": {
+      "notSaved": "لم يتم الحفظ",
+      "saved": "تم الحفظ",
+      "ready": "جاهز",
+      "saveError": "خطأ في الحفظ",
+      "sessionLoaded": "تم تحميل الجلسة",
+      "newSession": "جلسة جديدة",
+      "loadError": "خطأ في التحميل",
+      "autoSaved": "تم الحفظ تلقائياً",
+      "sessionSaved": "تم حفظ الجلسة",
+      "pngExported": "تم تصدير PNG",
+      "pngError": "خطأ في تصدير PNG",
+      "stalkExported": "تم تصدير .stalk",
+      "stalkError": "خطأ في تصدير .stalk",
+      "invalidProjectFile": "ملف مشروع غير صالح",
+      "jsonImported": "تم استيراد JSON",
+      "importError": "خطأ في الاستيراد",
+      "archiveMissingSession": "لم يتم العثور على session.json في الأرشيف",
+      "invalidStalkProject": "مشروع .stalk غير صالح",
+      "stalkImported": "تم استيراد .stalk",
+      "stalkImportError": "خطأ في استيراد .stalk",
+      "boardReset": "تمت إعادة تعيين اللوحة",
+      "imageUploaded": "تم رفع الصورة"
+    },
+    "sidebar": {
+      "create": {
+        "title": "إنشاء",
+        "subtitle": "إضافة كيانات"
+      },
+      "links": {
+        "title": "الروابط",
+        "subtitle": "وضع ربط البطاقات",
+        "hint": "انقر على زر الربط في البطاقة الأولى، ثم على الثانية.",
+        "selected": "تم اختيار البطاقة الأولى"
+      },
+      "view": {
+        "title": "عرض",
+        "subtitle": "التوسيط والتقريب",
+        "center": "توسيط"
+      },
+      "project": {
+        "title": "المشروع",
+        "subtitle": "حفظ، استيراد، وتصدير",
+        "session": "الجلسة",
+        "exportPng": "تصدير PNG",
+        "exportStalk": "تصدير .stalk",
+        "importJson": "استيراد JSON",
+        "importStalk": "استيراد .stalk",
+        "resetBoard": "إعادة تعيين اللوحة"
+      },
+      "objects": {
+        "title": "الأهداف",
+        "subtitle": "{{count}} أهداف",
+        "searchPlaceholder": "البحث عن الأهداف",
+        "clearSearch": "مسح البحث",
+        "empty": "لا يوجد شيء هنا بعد",
+        "nothingFound": "لم يتم العثور على شيء"
+      }
+    },
+    "canvas": {
+      "resetZoom": "إعادة تعيين التقريب إلى 100%"
+    },
+    "card": {
+      "noDescription": "لا يوجد وصف",
+      "link": "رابط",
+      "delete": "حذف",
+      "resize": "تغيير الحجم"
+    },
+    "edges": {
+      "delete": "حذف الرابط"
+    },
+    "properties": {
+      "title": "الخصائص",
+      "show": "إظهار الخصائص",
+      "hide": "إخفاء الخصائص",
+      "empty": "اختر بطاقة من اللوحة لتعديل بياناتها.",
+      "sections": {
+        "main": "رئيسي",
+        "notes": "ملاحظة كاملة",
+        "meta": "الوسوم والمصدر",
+        "backlinks": "الارتباطات",
+        "appearance": "المظهر والحالة",
+        "image": "الصورة"
+      },
+      "fields": {
+        "type": "النوع",
+        "customLabel": "تسمية نوع مخصص",
+        "value": "القيمة",
+        "description": "الوصف",
+        "tags": "الوسوم",
+        "source": "المصدر",
+        "createdAt": "تم الإنشاء",
+        "updatedAt": "تم التحديث",
+        "incoming": "وارد",
+        "outgoing": "صادر",
+        "incomingEmpty": "لا توجد روابط واردة",
+        "outgoingEmpty": "لا توجد روابط صادرة",
+        "cardColor": "لون البطاقة",
+        "status": "الحالة",
+        "uploadImage": "رفع صورة",
+        "deleteObject": "حذف الكائن"
+      },
+      "placeholders": {
+        "customLabel": "مثلاً: مركبة / حدث / حساب",
+        "value": "أدخل القيمة",
+        "description": "أدخل ملاحظة، سمات، روابط، أو تفاصيل",
+        "note": "نص طويل يمكن تخزينه بشكل منفصل عن الوصف المختصر",
+        "source": "رابط، خدمة، شخص، ملف"
+      },
+      "noteHint": "تظهر البطاقة معاينة فقط. تصدير PNG يشمل فقط ما هو ظاهر على اللوحة."
+    }
+  },
+  "reports": {
+    "title": "سجل البحث",
+    "subtitle": "نتائج عمليات البحث عبر API تُخزن هنا.",
+    "clearHistory": "مسح السجل",
+    "searchPlaceholder": "البحث في السجل",
+    "empty": "سجل البحث فارغ.",
+    "nothingFound": "لم تطابق أي سجلات استعلامك.",
+    "untitled": "بدون عنوان",
+    "emptyRecord": "سجل فارغ",
+    "savedAt": "تم الحفظ في",
+    "copy": "نسخ",
+    "downloadHtml": "تحميل HTML",
+    "chooseRecord": "اختر سجلاً من القائمة على اليسار.",
+    "copied": "تم النسخ",
+    "copyError": "فشل النسخ",
+    "recordEmpty": "السجل فارغ.",
+    "readError": "فشل قراءة سجل البحث.",
+    "copyErrorLog": "فشل نسخ التقرير.",
+    "html": {
+      "exportedAt": "تم التصدير في",
+      "savedAt": "تم الحفظ في",
+      "emptyRecord": "السجل فارغ."
+    }
+  },
+  "api": {
+    "searchTypes": {
+      "phone": "هاتف",
+      "email": "بريد إلكتروني",
+      "fio": "الاسم الكامل",
+      "vk": "معرف VK",
+      "tg": "معرف Telegram",
+      "ip": "عنوان IP",
+      "snils": "SNILS",
+      "inn": "INN",
+      "nick": "اللقب",
+      "car": "سيارة / VIN",
+      "ok": "Odnoklassniki",
+      "fb": "فيسبوك"
+    },
+    "fallbackFieldKey": "حقل إضافي",
+    "fallbackDatabase": "قاعدة بيانات غير مسماة",
+    "fallbackDescription": "الوصف مفقود",
+    "report": {
+      "query": "الاستعلام",
+      "searchType": "نوع البحث",
+      "results": "تطابقات قاعدة البيانات",
+      "noResults": "لا توجد نتائج.",
+      "databaseTitle": "قاعدة البيانات",
+      "databaseName": "اسم قاعدة البيانات",
+      "description": "الوصف",
+      "fields": "الحقول",
+      "fieldsEmpty": "لا توجد حقول",
+      "generatedBy": "تم الإنشاء بواسطة",
+      "source": "المصدر",
+      "exportDate": "تاريخ التصدير"
+    },
+    "copy": {
+      "success": "تم النسخ",
+      "error": "فشل النسخ"
+    },
+    "errors": {
+      "historySave": "فشل حفظ سجل البحث في التقارير.",
+      "missingKey": "لم يتم العثور على مفتاح NightSearch",
+      "emptyQuery": "أدخل استعلاماً",
+      "search": "خطأ في البحث"
+    },
+    "intro": {
+      "subtitle": "البحث من خلال مفتاح API الخاص بك.",
+      "description": "تم توصيل NightSearch كمزود أول متوافق."
+    },
+    "status": {
+      "keyFound": "تم العثور على المفتاح",
+      "keyMissing": "المفتاح مفقود",
+      "warningAddKey": "أضف مفتاح NightSearch API في الإعدادات أولاً."
+    },
+    "form": {
+      "searchType": "نوع البحث",
+      "query": "الاستعلام",
+      "queryPlaceholder": "أدخل بريداً، هاتفاً، لقباً، IP، وما إلى ذلك",
+      "search": "بحث",
+      "searching": "جاري البحث..."
+    },
+    "requestInfo": {
+      "status": "الحالة",
+      "query": "الاستعلام",
+      "matches": "تطابقات قاعدة البيانات"
+    },
+    "actions": {
+      "openAll": "توسيع الكل",
+      "closeAll": "طي الكل",
+      "downloadHtml": "تحميل HTML",
+      "copy": "نسخ"
+    },
+    "fieldsCount": "الحقول: {{count}}",
+    "emptyResults": "لا توجد نتائج."
+  },
+  "exif": {
+    "notFound": "غير موجود",
+    "camera": "الكاميرا",
+    "lens": "العدسة",
+    "shotDate": "تاريخ الالتقاط",
+    "iso": "ISO",
+    "exposure": "التعرض",
+    "aperture": "فتحة العدسة",
+    "focalLength": "البعد البؤري",
+    "software": "البرنامج",
+    "gpsPresent": "تم اكتشاف إحداثيات GPS",
+    "processingDetected": "تم اكتشاف برنامج تحرير: {{value}}",
+    "modifyMismatch": "تاريخ التعديل يختلف عن تاريخ الالتقاط",
+    "cameraMissing": "بيانات الكاميرا مفقودة",
+    "partialMetadata": "تبدو البيانات الوصفية جزئية أو مجردة",
+    "errors": {
+      "unsupported": "التنسيقات المدعومة: JPEG, TIFF, PNG, HEIC/HEIF, AVIF, WEBP.",
+      "tooLarge": "الملف كبير جداً. الحد الأقصى: {{size}} ميجابايت.",
+      "exifMissing": "لم يتم العثور على بيانات EXIF في هذا الملف.",
+      "parse": "خطأ أثناء تحليل EXIF: {{message}}",
+      "copy": "فشل النسخ: {{message}}"
+    },
+    "previewUnsupported": "قد تكون المعاينة غير متاحة لهذا التنسيق في التطبيق، ولكن سيتم قراءة EXIF على أي حال.",
+    "dropzone": {
+      "title": "اسحب ملف الصورة هنا",
+      "orClick": "أو انقر للاختيار",
+      "maxSize": "الحد الأقصى للحجم: {{size}} ميجابايت"
+    },
+    "file": "الملف",
+    "analyzing": "جاري تحليل EXIF...",
+    "preview": "معاينة",
+    "title": "بيانات EXIF ({{count}})",
+    "copyAll": "نسخ الكل",
+    "copyAllTitle": "نسخ جميع بيانات EXIF",
+    "copyFieldTitle": "نسخ قيمة {{key}}",
+    "copyFieldSuccess": "تم نسخ قيمة \"{{key}}\"",
+    "copyAllSuccess": "تم نسخ جميع بيانات EXIF",
+    "openMap": "فتح الإحداثيات على الخريطة",
+    "page": "صفحة {{current}} من {{total}}",
+    "prevPage": "الصفحة السابقة",
+    "nextPage": "الصفحة التالية"
+  },
+  "about": {
+    "newsCardFallback": "أخبار",
+    "newsUntitled": "خبر",
+    "openMore": "فتح المزيد",
+    "madeWithLove": "صُنع بكل حب.",
+    "bullets": [
+      "لا يسرق كلمات مرورك.",
+      "لا يخبر أحداً بمكان سكنك.",
+      "لا يعرف من أنت."
+    ],
+    "telegram": "قم بزيارة قناتنا ودردشنا على Telegram",
+    "friends": {
+      "title": "أصدقاؤنا",
+      "subtitle": "ادعم هؤلاء الأشخاص الرائعين ومشاريعهم:",
+      "channel": "قناة"
+    },
+    "news": {
+      "title": "أخبار STALK",
+      "previous": "الأخبار السابقة",
+      "next": "الأخبار التالية",
+      "loadError": "فشل تحميل الأخبار.",
+      "empty": "لا توجد أخبار بعد."
+    }
+  },
+  "updates": {
+    "errorFallback": "خطأ في التحديث",
+    "available": {
+      "title": "تحديث متاح",
+      "version": "الإصدار الجديد: {{version}}",
+      "button": "تحميل التحديث"
+    },
+    "downloading": {
+      "title": "جاري تحميل التحديث"
+    },
+    "downloaded": {
+      "title": "التحديث جاهز",
+      "description": "أعد تشغيل التطبيق لتثبيته",
+      "button": "إعادة التشغيل والتثبيت"
+    },
+    "error": {
+      "title": "خطأ في التحديث"
+    }
+  }
+}

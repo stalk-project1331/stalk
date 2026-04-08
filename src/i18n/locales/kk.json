@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "code": "kk",
+    "name": "Kazakh",
+    "nativeName": "Қазақша",
+    "intlLocale": "kk-KZ"
+  },
+  "app": {
+    "greetings": [
+      "STALK-қа қош келдіңіз",
+      "STALK-қа қайта келдіңіз"
+    ],
+    "menu": {
+      "board": "Тақта",
+      "reports": "Есептер",
+      "exif": "EXIF деректері",
+      "api": "API",
+      "settings": "Баптаулар",
+      "about": "Туралы"
+    },
+    "actions": {
+      "hideMenu": "Мәзірді жасыру",
+      "showMenu": "Мәзірді көрсету",
+      "home": "Басты бетке өту"
+    },
+    "window": {
+      "minimize": "Кішірейту",
+      "maximize": "Үлкейту",
+      "close": "Жабу"
+    },
+    "errors": {
+      "componentNotFound": "Компонент табылмады"
+    }
+  },
+
+  "settings": {
+    "title": "Баптаулар",
+    "sound": {
+      "label": "Қосымша дыбыстары"
+    },
+    "language": {
+      "title": "Тіл",
+      "label": "Интерфейс тілі",
+      "hint": "Өзгерістер бірден қолданылады. Жаңа тіл қосу үшін src/i18n/locales ішіне файл қосыңыз."
+    },
+
+    "boardEdges": {
+      "title": "Тақта байланыстары",
+      "style": "Сызық стилі",
+      "width": "Сызық қалыңдығы",
+      "opacity": "Мөлдірлік",
+      "glow": "Жарқырау",
+      "dashed": "Үзік сызық",
+      "preview": "Алдын ала қарау",
+      "styles": {
+        "curved": "Иілген",
+        "straight": "Түзу"
+      }
+    },
+
+    "apiServices": "API қызметтері",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "API кілтіңізді сақтаңыз",
+      "descriptionAfterLink": ". Сақтағаннан кейін API бөлімі мәзірде пайда болады.",
+      "statusSaved": "Кілт сақталды",
+      "statusEmpty": "Кілт көрсетілмеген",
+      "apiKeyLabel": "API кілті",
+      "apiKeyPlaceholder": "NightSearch API кілтін енгізіңіз",
+      "showKey": "Көрсету",
+      "hideKey": "Жасыру",
+      "save": "Сақтау",
+      "delete": "Жою",
+      "savedMessage": "NightSearch кілті сақталды",
+      "emptyMessage": "Өріс бос",
+      "saveError": "Кілт сақтау қатесі",
+      "deletedMessage": "NightSearch кілті жойылды",
+      "deleteError": "Кілт жою қатесі"
+    },
+    "future": {
+      "title": "Болашақ баптаулар",
+      "description": "Бұл бөлім болашақ жаңартуларға арналған."
+    },
+    "reload": "Қайта жүктеу"
+  },
+
+  "api": {
+    "searchTypes": {
+      "phone": "Телефон",
+      "email": "Email",
+      "fio": "Аты-жөні",
+      "vk": "VK id",
+      "tg": "Telegram id",
+      "ip": "IP",
+      "snils": "SNILS",
+      "inn": "INN",
+      "nick": "Лақап аты",
+      "car": "Көлік / VIN",
+      "ok": "Одноклассники",
+      "fb": "Facebook"
+    }
+  },
+
+  "updates": {
+    "errorFallback": "Жаңарту қатесі",
+    "available": {
+      "title": "Жаңарту қолжетімді",
+      "version": "Жаңа нұсқа: {{version}}",
+      "button": "Жүктеу"
+    },
+    "downloading": {
+      "title": "Жүктелуде"
+    },
+    "downloaded": {
+      "title": "Дайын",
+      "description": "Қайта жүктеңіз",
+      "button": "Қайта жүктеу"
+    },
+    "error": {
+      "title": "Жаңарту қатесі"
+    }
+  }
+}

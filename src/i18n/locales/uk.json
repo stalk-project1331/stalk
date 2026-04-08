@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "code": "uk",
+    "name": "Ukrainian",
+    "nativeName": "Українська",
+    "intlLocale": "uk-UA"
+  },
+  "app": {
+    "greetings": [
+      "Ласкаво просимо до STALK",
+      "З поверненням до STALK"
+    ],
+    "menu": {
+      "board": "Дошка",
+      "reports": "Звіти",
+      "exif": "EXIF",
+      "api": "API",
+      "settings": "Налаштування",
+      "about": "Про програму"
+    },
+    "actions": {
+      "hideMenu": "Сховати меню",
+      "showMenu": "Показати меню",
+      "home": "На головну"
+    },
+    "window": {
+      "minimize": "Згорнути",
+      "maximize": "Розгорнути",
+      "close": "Закрити"
+    },
+    "errors": {
+      "componentNotFound": "Компонент не знайдено"
+    }
+  },
+  "settings": {
+    "title": "Налаштування",
+    "sound": {
+      "label": "Звуки застосунку"
+    },
+    "language": {
+      "title": "Мова",
+      "label": "Мова інтерфейсу",
+      "hint": "Зміни застосовуються одразу. Додайте новий locale-файл у src/i18n/locales — і мова з’явиться тут автоматично."
+    },
+    "boardEdges": {
+      "title": "Зв’язки дошки",
+      "style": "Стиль лінії",
+      "width": "Товщина лінії",
+      "opacity": "Прозорість",
+      "glow": "Світіння",
+      "dashed": "Пунктир",
+      "preview": "Попередній перегляд",
+      "styles": {
+        "curved": "Вигнуті",
+        "straight": "Прямі"
+      }
+    },
+    "apiServices": "API сервіси",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "Збережіть API-ключ для",
+      "descriptionAfterLink": ". Після цього в меню з’явиться розділ API.",
+      "statusSaved": "Ключ збережено",
+      "statusEmpty": "Ключ не задано",
+      "apiKeyLabel": "API-ключ",
+      "apiKeyPlaceholder": "Введіть API-ключ NightSearch",
+      "showKey": "Показати",
+      "hideKey": "Сховати",
+      "save": "Зберегти",
+      "delete": "Видалити",
+      "savedMessage": "Ключ NightSearch збережено",
+      "emptyMessage": "Поле порожнє",
+      "saveError": "Не вдалося зберегти ключ",
+      "deletedMessage": "Ключ NightSearch видалено",
+      "deleteError": "Не вдалося видалити ключ"
+    },
+    "future": {
+      "title": "Майбутні налаштування",
+      "description": "Цей блок залишено як каркас для наступних оновлень: інтерфейс, поведінка дошки, експорт, гарячі клавіші та інші параметри."
+    },
+    "reload": "Перезапустити застосунок"
+  },
+
+  "board": {
+    "entities": {
+      "person": "Особа",
+      "username": "Логін",
+      "email": "Ел. пошта",
+      "phone": "Телефон",
+      "domain": "Домен",
+      "ip": "IP",
+      "location": "Локація",
+      "company": "Компанія",
+      "event": "Подія",
+      "task": "Завдання",
+      "fact": "Факт",
+      "image": "Зображення",
+      "note": "Нотатка",
+      "custom": "Свій тип"
+    },
+    "colors": {
+      "byType": "За типом"
+    },
+    "statuses": {
+      "none": "Без статусу",
+      "new": "Новий",
+      "in_progress": "У роботі",
+      "verified": "Перевірено",
+      "warning": "Ризик",
+      "done": "Готово",
+      "archived": "Архів"
+    },
+    "messages": {
+      "notSaved": "Не збережено",
+      "saved": "Збережено",
+      "ready": "Готово",
+      "saveError": "Помилка збереження",
+      "sessionLoaded": "Сесію завантажено",
+      "newSession": "Нова сесія",
+      "loadError": "Помилка завантаження",
+      "autoSaved": "Автозбережено",
+      "sessionSaved": "Сесію збережено",
+      "pngExported": "PNG експортовано",
+      "pngError": "Помилка експорту PNG",
+      "stalkExported": ".stalk експортовано",
+      "stalkError": "Помилка експорту .stalk",
+      "invalidProjectFile": "Некоректний файл проєкту",
+      "jsonImported": "JSON імпортовано",
+      "importError": "Помилка імпорту",
+      "archiveMissingSession": "В архіві немає session.json",
+      "invalidStalkProject": "Некоректний .stalk проєкт",
+      "stalkImported": ".stalk імпортовано",
+      "stalkImportError": "Помилка імпорту .stalk",
+      "boardReset": "Дошку скинуто",
+      "imageUploaded": "Зображення завантажено"
+    },
+
+    "sidebar": {
+      "create": {
+        "title": "Створити",
+        "subtitle": "Додавання об’єктів"
+      },
+      "links": {
+        "title": "Зв’язки",
+        "subtitle": "Режим з’єднання карток",
+        "hint": "Натисніть кнопку зв’язку на першій картці, потім на другій.",
+        "selected": "Першу картку вибрано"
+      },
+      "view": {
+        "title": "Вигляд",
+        "subtitle": "Центрування і масштаб",
+        "center": "Центр"
+      },
+      "project": {
+        "title": "Проєкт",
+        "subtitle": "Збереження, імпорт та експорт",
+        "session": "Сесія",
+        "exportPng": "Експорт PNG",
+        "exportStalk": "Експорт .stalk",
+        "importJson": "Імпорт JSON",
+        "importStalk": "Імпорт .stalk",
+        "resetBoard": "Скинути дошку"
+      },
+      "objects": {
+        "title": "Об’єкти",
+        "subtitle": "{{count}} об’єктів",
+        "searchPlaceholder": "Пошук об’єктів",
+        "clearSearch": "Очистити пошук",
+        "empty": "Поки порожньо",
+        "nothingFound": "Нічого не знайдено"
+      }
+    },
+
+    "canvas": {
+      "resetZoom": "Скинути масштаб до 100%"
+    },
+
+    "card": {
+      "noDescription": "Без опису",
+      "link": "Зв’язати",
+      "delete": "Видалити",
+      "resize": "Змінити розмір"
+    },
+
+    "edges": {
+      "delete": "Видалити зв’язок"
+    },
+
+    "properties": {
+      "title": "Властивості",
+      "show": "Показати властивості",
+      "hide": "Сховати властивості",
+      "empty": "Виберіть картку на дошці, щоб редагувати її дані.",
+      "sections": {
+        "main": "Основне",
+        "notes": "Повна нотатка",
+        "meta": "Теги та джерело",
+        "backlinks": "Зв’язки",
+        "appearance": "Оформлення і статус",
+        "image": "Зображення"
+      },
+      "fields": {
+        "type": "Тип",
+        "customLabel": "Назва custom-типу",
+        "value": "Значення",
+        "description": "Опис",
+        "tags": "Теги",
+        "source": "Джерело",
+        "createdAt": "Створено",
+        "updatedAt": "Оновлено",
+        "incoming": "Вхідні",
+        "outgoing": "Вихідні",
+        "incomingEmpty": "Немає вхідних зв’язків",
+        "outgoingEmpty": "Немає вихідних зв’язків",
+        "cardColor": "Колір картки",
+        "status": "Статус",
+        "uploadImage": "Завантажити зображення",
+        "deleteObject": "Видалити об’єкт"
+      },
+      "placeholders": {
+        "customLabel": "Наприклад: Vehicle / Event / Account",
+        "value": "Введіть значення",
+        "description": "Введіть нотатку, атрибути, посилання або деталі",
+        "note": "Довгий текст, який можна зберігати окремо від короткого опису",
+        "source": "Посилання, сервіс, людина, файл"
+      },
+      "noteHint": "У картці показується прев’ю. У PNG потрапляє лише те, що видно на дошці."
+    }
+  },
+
+  "updates": {
+    "errorFallback": "Помилка оновлення",
+    "available": {
+      "title": "Доступне оновлення",
+      "version": "Нова версія: {{version}}",
+      "button": "Завантажити оновлення"
+    },
+    "downloading": {
+      "title": "Завантаження оновлення"
+    },
+    "downloaded": {
+      "title": "Оновлення готове",
+      "description": "Перезапустіть застосунок",
+      "button": "Перезапустити"
+    },
+    "error": {
+      "title": "Помилка оновлення"
+    }
+  }
+}

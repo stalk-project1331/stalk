@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "code": "ka",
+    "name": "Georgian",
+    "nativeName": "ქართული",
+    "intlLocale": "ka-GE"
+  },
+  "app": {
+    "greetings": [
+      "მოგესალმებით STALK-ში",
+      "კეთილი დაბრუნება STALK-ში"
+    ],
+    "menu": {
+      "board": "დაფა",
+      "reports": "ანგარიშები",
+      "exif": "EXIF მონაცემები",
+      "api": "API",
+      "settings": "პარამეტრები",
+      "about": "შესახებ"
+    },
+    "actions": {
+      "hideMenu": "მენიუს დამალვა",
+      "showMenu": "მენიუს ჩვენება",
+      "home": "მთავარ ეკრანზე გადასვლა"
+    },
+    "window": {
+      "minimize": "დაპატარავება",
+      "maximize": "გაშლა",
+      "close": "დახურვა"
+    },
+    "errors": {
+      "componentNotFound": "კომპონენტი ვერ მოიძებნა"
+    }
+  },
+  "settings": {
+    "title": "პარამეტრები",
+    "sound": {
+      "label": "აპლიკაციის ხმები"
+    },
+    "language": {
+      "title": "ენა",
+      "label": "ინტერფეისის ენა",
+      "hint": "ცვლილებები მყისიერად მოქმედებს. ახალი ენის დასამატებლად დაამატეთ locale ფაილი src/i18n/locales-ში, და ის აქ ავტომატურად გამოჩნდება."
+    },
+    "boardEdges": {
+      "title": "დაფის კავშირები",
+      "style": "ხაზის სტილი",
+      "width": "ხაზის სისქე",
+      "opacity": "გამჭვირვალობა",
+      "glow": "ნათება",
+      "dashed": "წყვეტილი",
+      "preview": "გადახედვა",
+      "styles": {
+        "curved": "მრუდე",
+        "straight": "სწორი"
+      }
+    },
+    "apiServices": "API სერვისები",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "შეინახეთ თქვენი API გასაღები",
+      "descriptionAfterLink": ". შენახვის შემდეგ მენიუში გამოჩნდება API განყოფილება.",
+      "statusSaved": "გასაღები შენახულია",
+      "statusEmpty": "გასაღები არ არის მითითებული",
+      "apiKeyLabel": "API გასაღები",
+      "apiKeyPlaceholder": "შეიყვანეთ NightSearch API გასაღები",
+      "showKey": "გასაღების ჩვენება",
+      "hideKey": "გასაღების დამალვა",
+      "save": "შენახვა",
+      "delete": "წაშლა",
+      "savedMessage": "NightSearch გასაღები შენახულია",
+      "emptyMessage": "ველი ცარიელია",
+      "saveError": "გასაღების შენახვა ვერ მოხერხდა",
+      "deletedMessage": "NightSearch გასაღები წაიშალა",
+      "deleteError": "გასაღების წაშლა ვერ მოხერხდა"
+    },
+    "future": {
+      "title": "მომავალი პარამეტრები",
+      "description": "ეს ბლოკი დატოვებულია, როგორც ჩარჩო მომავალი განახლებებისთვის: ინტერფეისი, დაფის ქცევა, ექსპორტი, ცხელი ღილაკები და სხვა პარამეტრები."
+    },
+    "reload": "აპლიკაციის გადატვირთვა"
+  },
+  "board": {
+    "entities": {
+      "person": "პირი",
+      "username": "მომხმარებლის სახელი",
+      "email": "ელფოსტა",
+      "phone": "ტელეფონი",
+      "domain": "დომენი",
+      "ip": "IP",
+      "location": "მდებარეობა",
+      "company": "კომპანია",
+      "event": "მოვლენა",
+      "task": "დავალება",
+      "fact": "ფაქტი",
+      "image": "სურათი",
+      "note": "შენიშვნა",
+      "custom": "მორგებული"
+    },
+    "colors": {
+      "byType": "ტიპის მიხედვით"
+    },
+    "statuses": {
+      "none": "სტატუსის გარეშე",
+      "new": "ახალი",
+      "in_progress": "მუშავდება",
+      "verified": "დადასტურებული",
+      "warning": "რისკი",
+      "done": "დასრულებული",
+      "archived": "დაარქივებული"
+    },
+    "messages": {
+      "notSaved": "არ არის შენახული",
+      "saved": "შენახულია",
+      "ready": "მზადაა",
+      "saveError": "შენახვის შეცდომა",
+      "sessionLoaded": "სესია ჩაიტვირთა",
+      "newSession": "ახალი სესია",
+      "loadError": "ჩატვირთვის შეცდომა",
+      "autoSaved": "ავტომატურად შენახულია",
+      "sessionSaved": "სესია შენახულია",
+      "pngExported": "PNG ექსპორტირებულია",
+      "pngError": "PNG ექსპორტის შეცდომა",
+      "stalkExported": ".stalk ექსპორტირებულია",
+      "stalkError": ".stalk ექსპორტის შეცდომა",
+      "invalidProjectFile": "პროექტის არასწორი ფაილი",
+      "jsonImported": "JSON იმპორტირებულია",
+      "importError": "იმპორტის შეცდომა",
+      "archiveMissingSession": "არქივში session.json ვერ მოიძებნა",
+      "invalidStalkProject": "არასწორი .stalk პროექტი",
+      "stalkImported": ".stalk იმპორტირებულია",
+      "stalkImportError": ".stalk იმპორტის შეცდომა",
+      "boardReset": "დაფა განულდა",
+      "imageUploaded": "სურათი აიტვირთა"
+    },
+    "sidebar": {
+      "create": {
+        "title": "შექმნა",
+        "subtitle": "ობიექტების დამატება"
+      },
+      "links": {
+        "title": "კავშირები",
+        "subtitle": "ბარათების დაკავშირების რეჟიმი",
+        "hint": "დააჭირეთ კავშირის ღილაკს პირველ ბარათზე, შემდეგ მეორეზე.",
+        "selected": "პირველი ბარათი არჩეულია"
+      },
+      "view": {
+        "title": "ხედვა",
+        "subtitle": "ცენტრირება და მასშტაბი",
+        "center": "ცენტრში"
+      },
+      "project": {
+        "title": "პროექტი",
+        "subtitle": "შენახვა, იმპორტი და ექსპორტი",
+        "session": "სესია",
+        "exportPng": "PNG ექსპორტი",
+        "exportStalk": ".stalk ექსპორტი",
+        "importJson": "JSON იმპორტი",
+        "importStalk": ".stalk იმპორტი",
+        "resetBoard": "დაფის განულება"
+      },
+      "objects": {
+        "title": "ობიექტები",
+        "subtitle": "{{count}} ობიექტი",
+        "searchPlaceholder": "ობიექტების ძიება",
+        "clearSearch": "ძიების გასუფთავება",
+        "empty": "ჯერ აქ არაფერია",
+        "nothingFound": "ვერაფერი მოიძებნა"
+      }
+    },
+    "canvas": {
+      "resetZoom": "მასშტაბის დაბრუნება 100%-ზე"
+    },
+    "card": {
+      "noDescription": "აღწერა არ არის",
+      "link": "დაკავშირება",
+      "delete": "წაშლა",
+      "resize": "ზომის შეცვლა"
+    },
+    "edges": {
+      "delete": "კავშირის წაშლა"
+    },
+    "properties": {
+      "title": "თვისებები",
+      "show": "თვისებების ჩვენება",
+      "hide": "თვისებების დამალვა",
+      "empty": "აირჩიეთ ბარათი დაფაზე მისი მონაცემების შესასწორებლად.",
+      "sections": {
+        "main": "მთავარი",
+        "notes": "სრული შენიშვნა",
+        "meta": "ტეგები და წყარო",
+        "backlinks": "კავშირები",
+        "appearance": "გარეგნობა და სტატუსი",
+        "image": "სურათი"
+      },
+      "fields": {
+        "type": "ტიპი",
+        "customLabel": "მორგებული ტიპის სახელი",
+        "value": "მნიშვნელობა",
+        "description": "აღწერა",
+        "tags": "ტეგები",
+        "source": "წყარო",
+        "createdAt": "შექმნილია",
+        "updatedAt": "განახლებულია",
+        "incoming": "შემომავალი",
+        "outgoing": "გამავალი",
+        "incomingEmpty": "შემომავალი კავშირები არ არის",
+        "outgoingEmpty": "გამავალი კავშირები არ არის",
+        "cardColor": "ბარათის ფერი",
+        "status": "სტატუსი",
+        "uploadImage": "სურათის ატვირთვა",
+        "deleteObject": "ობიექტის წაშლა"
+      },
+      "placeholders": {
+        "customLabel": "მაგალითად: Vehicle / Event / Account",
+        "value": "შეიყვანეთ მნიშვნელობა",
+        "description": "შეიყვანეთ შენიშვნა, ატრიბუტები, ბმულები ან დეტალები",
+        "note": "გრძელი ტექსტი, რომელიც შეიძლება ინახებოდეს მოკლე აღწერისგან ცალკე",
+        "source": "ბმული, სერვისი, პირი, ფაილი"
+      },
+      "noteHint": "ბარათზე ნაჩვენებია წინასწარი ხედი. PNG ექსპორტში მოხვდება მხოლოდ ის, რაც დაფაზე ჩანს."
+    }
+  },
+  "reports": {
+    "title": "ძიების ისტორია",
+    "subtitle": "API ძიების შედეგები აქ ინახება.",
+    "clearHistory": "ისტორიის გასუფთავება",
+    "searchPlaceholder": "ისტორიაში ძიება",
+    "empty": "ძიების ისტორია ცარიელია.",
+    "nothingFound": "თქვენს მოთხოვნას არაფერი დაემთხვა.",
+    "untitled": "უსათაურო",
+    "emptyRecord": "ცარიელი ჩანაწერი",
+    "savedAt": "შენახულია",
+    "copy": "კოპირება",
+    "downloadHtml": "HTML ჩამოტვირთვა",
+    "chooseRecord": "აირჩიეთ ჩანაწერი მარცხენა სიიდან.",
+    "copied": "დაკოპირებულია",
+    "copyError": "კოპირება ვერ მოხერხდა",
+    "recordEmpty": "ჩანაწერი ცარიელია.",
+    "readError": "ძიების ისტორიის წაკითხვა ვერ მოხერხდა.",
+    "copyErrorLog": "ანგარიშის კოპირება ვერ მოხერხდა.",
+    "html": {
+      "exportedAt": "ექსპორტირებულია",
+      "savedAt": "შენახულია",
+      "emptyRecord": "ჩანაწერი ცარიელია."
+    }
+  },
+  "api": {
+    "searchTypes": {
+      "phone": "ტელეფონი",
+      "email": "ელფოსტა",
+      "fio": "სრული სახელი",
+      "vk": "VK id",
+      "tg": "Telegram id",
+      "ip": "IP",
+      "snils": "SNILS",
+      "inn": "INN",
+      "nick": "მეტსახელი",
+      "car": "მანქანა / VIN",
+      "ok": "Odnoklassniki",
+      "fb": "Facebook"
+    },
+    "fallbackFieldKey": "დამატებითი ველი",
+    "fallbackDatabase": "უსახელო ბაზა",
+    "fallbackDescription": "აღწერა არ არის",
+    "report": {
+      "query": "მოთხოვნა",
+      "searchType": "ძიების ტიპი",
+      "results": "ბაზებში დამთხვევები",
+      "noResults": "შედეგები არ არის.",
+      "databaseTitle": "ბაზა",
+      "databaseName": "ბაზის სახელი",
+      "description": "აღწერა",
+      "fields": "ველები",
+      "fieldsEmpty": "ველები არ არის",
+      "generatedBy": "გენერირებულია",
+      "source": "წყარო",
+      "exportDate": "ექსპორტის თარიღი"
+    },
+    "copy": {
+      "success": "დაკოპირებულია",
+      "error": "კოპირება ვერ მოხერხდა"
+    },
+    "errors": {
+      "historySave": "ძიების ისტორიის ანგარიშებში შენახვა ვერ მოხერხდა.",
+      "missingKey": "NightSearch გასაღები ვერ მოიძებნა",
+      "emptyQuery": "შეიყვანეთ მოთხოვნა",
+      "search": "ძიების შეცდომა"
+    },
+    "intro": {
+      "subtitle": "ძიება თქვენი პირადი API გასაღებით.",
+      "description": "NightSearch დაკავშირებულია, როგორც პირველი ადაპტირებული პროვაიდერი."
+    },
+    "status": {
+      "keyFound": "გასაღები ნაპოვნია",
+      "keyMissing": "გასაღები ვერ მოიძებნა",
+      "warningAddKey": "ჯერ დაამატეთ NightSearch API გასაღები პარამეტრებში."
+    },
+    "form": {
+      "searchType": "ძიების ტიპი",
+      "query": "მოთხოვნა",
+      "queryPlaceholder": "შეიყვანეთ ელფოსტა, ტელეფონი, მეტსახელი, IP და ა.შ.",
+      "search": "ძიება",
+      "searching": "იძებნება..."
+    },
+    "requestInfo": {
+      "status": "სტატუსი",
+      "query": "მოთხოვნა",
+      "matches": "ბაზებში დამთხვევები"
+    },
+    "actions": {
+      "openAll": "ყველას გახსნა",
+      "closeAll": "ყველას დაკეცვა",
+      "downloadHtml": "HTML ჩამოტვირთვა",
+      "copy": "კოპირება"
+    },
+    "fieldsCount": "ველები: {{count}}",
+    "emptyResults": "შედეგები არ არის."
+  },
+  "exif": {
+    "notFound": "ვერ მოიძებნა",
+    "camera": "კამერა",
+    "lens": "ობიექტივი",
+    "shotDate": "გადაღების თარიღი",
+    "iso": "ISO",
+    "exposure": "ექსპოზიცია",
+    "aperture": "დიაფრაგმა",
+    "focalLength": "ფოკალური მანძილი",
+    "software": "პროგრამა",
+    "gpsPresent": "აღმოჩენილია GPS კოორდინატები",
+    "processingDetected": "აღმოჩენილია დამუშავების პროგრამა: {{value}}",
+    "modifyMismatch": "ცვლილების თარიღი განსხვავდება გადაღების თარიღისგან",
+    "cameraMissing": "კამერის მონაცემები არ არის",
+    "partialMetadata": "მეტამონაცემები ჩანს ნაწილობრივი ან ამოჭრილი",
+    "errors": {
+      "unsupported": "მხარდაჭერილია JPEG, TIFF, PNG, HEIC/HEIF, AVIF, WEBP.",
+      "tooLarge": "ფაილი ძალიან დიდია. მაქსიმუმი: {{size}} MB.",
+      "exifMissing": "EXIF მონაცემები ვერ მოიძებნა ამ ფაილში ან ფაილი მათ არ შეიცავს.",
+      "parse": "შეცდომა EXIF-ის ანალიზისას: {{message}}",
+      "copy": "კოპირების შეცდომა: {{message}}"
+    },
+    "previewUnsupported": "ამ ფორმატისთვის აპლიკაციაში წინასწარი ხედი შეიძლება მიუწვდომელი იყოს, მაგრამ EXIF მაინც წაიკითხება.",
+    "dropzone": {
+      "title": "გადაათრიეთ გამოსახულების ფაილი აქ",
+      "orClick": "ან დააწკაპუნეთ ასარჩევად",
+      "maxSize": "მაქსიმალური ზომა: {{size}} MB"
+    },
+    "file": "ფაილი",
+    "analyzing": "EXIF ანალიზი...",
+    "preview": "წინასწარი ხედი",
+    "title": "EXIF მონაცემები ({{count}})",
+    "copyAll": "ყველაფრის კოპირება",
+    "copyAllTitle": "ყველა EXIF მონაცემის კოპირება",
+    "copyFieldTitle": "{{key}} მნიშვნელობის კოპირება",
+    "copyFieldSuccess": "\"{{key}}\" მნიშვნელობა დაკოპირდა",
+    "copyAllSuccess": "ყველა EXIF მონაცემი დაკოპირდა",
+    "openMap": "კოორდინატების რუკაზე გახსნა",
+    "page": "გვერდი {{current}} / {{total}}",
+    "prevPage": "წინა გვერდი",
+    "nextPage": "შემდეგი გვერდი"
+  },
+  "about": {
+    "newsCardFallback": "სიახლეები",
+    "newsUntitled": "სიახლე",
+    "openMore": "ვრცლად გახსნა",
+    "madeWithLove": "სიყვარულით შექმნილი.",
+    "bullets": [
+      "არ იპარავს თქვენს პაროლებს.",
+      "არავის არ ეუბნება, სად ხართ.",
+      "არ იცის, ვინ ხართ."
+    ],
+    "telegram": "ეწვიეთ ჩვენს Telegram არხსა და ჩატს",
+    "friends": {
+      "title": "ჩვენი მეგობრები",
+      "subtitle": "დაუჭირეთ მხარი ამ შესანიშნავ ადამიანებს და მათ პროექტებს:",
+      "channel": "არხი"
+    },
+    "news": {
+      "title": "STALK სიახლეები",
+      "previous": "წინა სიახლე",
+      "next": "შემდეგი სიახლე",
+      "loadError": "სიახლეების ჩატვირთვა ვერ მოხერხდა.",
+      "empty": "ჯერ სიახლეები არ არის."
+    }
+  },
+  "updates": {
+    "errorFallback": "განახლების შეცდომა",
+    "available": {
+      "title": "განახლება ხელმისაწვდომია",
+      "version": "ახალი ვერსია: {{version}}",
+      "button": "განახლების ჩამოტვირთვა"
+    },
+    "downloading": {
+      "title": "განახლება იტვირთება"
+    },
+    "downloaded": {
+      "title": "განახლება მზადაა",
+      "description": "ინსტალაციისთვის გადატვირთეთ აპლიკაცია",
+      "button": "გადატვირთვა და ინსტალაცია"
+    },
+    "error": {
+      "title": "განახლების შეცდომა"
+    }
+  }
+}

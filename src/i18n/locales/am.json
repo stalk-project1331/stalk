@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "code": "hy",
+    "name": "Հայերեն",
+    "nativeName": "Հայերեն",
+    "intlLocale": "hy-AM"
+  },
+  "app": {
+    "greetings": [
+      "Բարի գալուստ STALK",
+      "Բարի վերադարձ STALK"
+    ],
+    "menu": {
+      "board": "Գրատախտակ",
+      "reports": "Զեկույցներ",
+      "exif": "EXIF տվյալներ",
+      "api": "API",
+      "settings": "Կարգավորումներ",
+      "about": "Ծրագրի մասին"
+    },
+    "actions": {
+      "hideMenu": "Թաքցնել մենյուն",
+      "showMenu": "Ցուցադրել մենյուն",
+      "home": "Գնալ գլխավոր էկրան"
+    },
+    "window": {
+      "minimize": "Փոքրացնել",
+      "maximize": "Մեծացնել",
+      "close": "Փակել"
+    },
+    "errors": {
+      "componentNotFound": "Բաղադրիչը չի գտնվել"
+    }
+  },
+  "settings": {
+    "title": "Կարգավորումներ",
+    "sound": {
+      "label": "Հավելվածի ձայներ"
+    },
+    "language": {
+      "title": "Լեզու",
+      "label": "Ինտերֆեյսի լեզուն",
+      "hint": "Փոփոխություններն ուժի մեջ են մտնում անմիջապես: Ավելացրեք նոր տեղայնացման ֆայլ src/i18n/locales-ում, որպեսզի այստեղ հայտնվի ևս մեկ լեզու:"
+    },
+    "boardEdges": {
+      "title": "Գրատախտակի կապեր",
+      "style": "Գծի ոճը",
+      "width": "Գծի հաստությունը",
+      "opacity": "Թափանցիկություն",
+      "glow": "Փայլ",
+      "dashed": "Գծիկավոր",
+      "preview": "Նախադիտում",
+      "styles": {
+        "curved": "Կոր",
+        "straight": "Ուղիղ"
+      }
+    },
+    "apiServices": "API ծառայություններ",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "Պահպանեք ձեր API բանալին",
+      "descriptionAfterLink": "-ի համար: Պահպանելուց հետո API բաժինը կհայտնվի մենյուում:",
+      "statusSaved": "Բանալին պահպանված է",
+      "statusEmpty": "Բանալին սահմանված չէ",
+      "apiKeyLabel": "API բանալի",
+      "apiKeyPlaceholder": "Մուտքագրեք NightSearch API բանալին",
+      "showKey": "Ցուցադրել բանալին",
+      "hideKey": "Թաքցնել բանալին",
+      "save": "Պահպանել",
+      "delete": "Ջնջել",
+      "savedMessage": "NightSearch բանալին պահպանված է",
+      "emptyMessage": "Դաշտը դատարկ է",
+      "saveError": "Չհաջողվեց պահպանել բանալին",
+      "deletedMessage": "NightSearch բանալին ջնջված է",
+      "deleteError": "Չհաջողվեց ջնջել բանալին"
+    },
+    "future": {
+      "title": "Ապագա կարգավորումներ",
+      "description": "Այս բլոկը պահպանված է որպես հիմք ապագա թարմացումների համար՝ ինտերֆեյս, գրատախտակի վարքագիծ, արտահանում, թեժ ստեղներ և այլ պարամետրեր:"
+    },
+    "reload": "Վերբեռնել հավելվածը"
+  },
+  "board": {
+    "entities": {
+      "person": "Անձ",
+      "username": "Օգտանուն",
+      "email": "Էլ. փոստ",
+      "phone": "Հեռախոս",
+      "domain": "Դոմեն",
+      "ip": "IP",
+      "location": "Գտնվելու վայր",
+      "company": "Ընկերություն",
+      "event": "Իրադարձություն",
+      "task": "Առաջադրանք",
+      "fact": "Փաստ",
+      "image": "Պատկեր",
+      "note": "Նշում",
+      "custom": "Հատուկ"
+    },
+    "colors": {
+      "byType": "Ըստ տեսակի"
+    },
+    "statuses": {
+      "none": "Առանց կարգավիճակի",
+      "new": "Նոր",
+      "in_progress": "Ընթացքի մեջ",
+      "verified": "Ստուգված",
+      "warning": "Ռիսկ",
+      "done": "Կատարված",
+      "archived": "Արխիվացված"
+    },
+    "messages": {
+      "notSaved": "Պահպանված չէ",
+      "saved": "Պահպանված է",
+      "ready": "Պատրաստ է",
+      "saveError": "Պահպանման սխալ",
+      "sessionLoaded": "Նիստը բեռնված է",
+      "newSession": "Նոր նիստ",
+      "loadError": "Բեռնման սխալ",
+      "autoSaved": "Ավտոմատ պահպանված",
+      "sessionSaved": "Նիստը պահպանված է",
+      "pngExported": "PNG-ն արտահանված է",
+      "pngError": "PNG արտահանման սխալ",
+      "stalkExported": ".stalk-ը արտահանված է",
+      "stalkError": ".stalk արտահանման սխալ",
+      "invalidProjectFile": "Անվավեր նախագծի ֆայլ",
+      "jsonImported": "JSON-ը ներմուծված է",
+      "importError": "Ներմուծման սխալ",
+      "archiveMissingSession": "session.json-ը չի գտնվել արխիվում",
+      "invalidStalkProject": "Անվավեր .stalk նախագիծ",
+      "stalkImported": ".stalk-ը ներմուծված է",
+      "stalkImportError": ".stalk ներմուծման սխալ",
+      "boardReset": "Գրատախտակը մաքրված է",
+      "imageUploaded": "Պատկերը վերբեռնված է"
+    },
+    "sidebar": {
+      "create": {
+        "title": "Ստեղծել",
+        "subtitle": "Ավելացնել օբյեկտներ"
+      },
+      "links": {
+        "title": "Կապեր",
+        "subtitle": "Քարտերի միացման ռեժիմ",
+        "hint": "Սեղմեք կապի կոճակը առաջին քարտի վրա, ապա երկրորդի:",
+        "selected": "Առաջին քարտը ընտրված է"
+      },
+      "view": {
+        "title": "Տեսք",
+        "subtitle": "Կենտրոնացում և մասշտաբ",
+        "center": "Կենտրոնացնել"
+      },
+      "project": {
+        "title": "Նախագիծ",
+        "subtitle": "Պահպանում, ներմուծում և արտահանում",
+        "session": "Նիստ",
+        "exportPng": "Արտահանել PNG",
+        "exportStalk": "Արտահանել .stalk",
+        "importJson": "Ներմուծել JSON",
+        "importStalk": "Ներմուծել .stalk",
+        "resetBoard": "Մաքրել գրատախտակը"
+      },
+      "objects": {
+        "title": "Օբյեկտներ",
+        "subtitle": "{{count}} օբյեկտ",
+        "searchPlaceholder": "Փնտրել օբյեկտներ",
+        "clearSearch": "Մաքրել որոնումը",
+        "empty": "Այստեղ դեռ ոչինչ չկա",
+        "nothingFound": "Ոչինչ չի գտնվել"
+      }
+    },
+    "canvas": {
+      "resetZoom": "Վերականգնել մասշտաբը 100%"
+    },
+    "card": {
+      "noDescription": "Նկարագրություն չկա",
+      "link": "Հղում",
+      "delete": "Ջնջել",
+      "resize": "Փոխել չափսը"
+    },
+    "edges": {
+      "delete": "Ջնջել կապը"
+    },
+    "properties": {
+      "title": "Հատկություններ",
+      "show": "Ցուցադրել հատկությունները",
+      "hide": "Թաքցնել հատկությունները",
+      "empty": "Ընտրեք քարտ գրատախտակի վրա՝ տվյալները խմբագրելու համար:",
+      "sections": {
+        "main": "Գլխավոր",
+        "notes": "Ամբողջական նշում",
+        "meta": "Թեգեր և աղբյուր",
+        "backlinks": "Կապեր",
+        "appearance": "Տեսք և կարգավիճակ",
+        "image": "Պատկեր"
+      },
+      "fields": {
+        "type": "Տեսակ",
+        "customLabel": "Հատուկ տեսակի պիտակ",
+        "value": "Արժեք",
+        "description": "Նկարագրություն",
+        "tags": "Թեգեր",
+        "source": "Աղբյուր",
+        "createdAt": "Ստեղծված է",
+        "updatedAt": "Թարմացված է",
+        "incoming": "Մուտքային",
+        "outgoing": "Ելքային",
+        "incomingEmpty": "Մուտքային կապեր չկան",
+        "outgoingEmpty": "Ելքային կապեր չկան",
+        "cardColor": "Քարտի գույնը",
+        "status": "Կարգավիճակ",
+        "uploadImage": "Վերբեռնել պատկեր",
+        "deleteObject": "Ջնջել օբյեկտը"
+      },
+      "placeholders": {
+        "customLabel": "Օրինակ՝ Մեքենա / Իրադարձություն / Հաշիվ",
+        "value": "Մուտքագրեք արժեք",
+        "description": "Մուտքագրեք նշում, հատկանիշներ, հղումներ կամ մանրամասներ",
+        "note": "Երկար տեքստ, որը կարող է պահվել կարճ նկարագրությունից առանձին",
+        "source": "Հղում, ծառայություն, անձ, ֆայլ"
+      },
+      "noteHint": "Քարտը ցույց է տալիս նախադիտումը: PNG արտահանումը ներառում է միայն այն, ինչ տեսանելի է գրատախտակի վրա:"
+    }
+  },
+  "reports": {
+    "title": "Որոնման պատմություն",
+    "subtitle": "API որոնումների արդյունքները պահվում են այստեղ:",
+    "clearHistory": "Մաքրել պատմությունը",
+    "searchPlaceholder": "Փնտրել պատմության մեջ",
+    "empty": "Որոնման պատմությունը դատարկ է:",
+    "nothingFound": "Ձեր հարցմանը համապատասխանող գրառումներ չեն գտնվել:",
+    "untitled": "Անվերնագիր",
+    "emptyRecord": "Դատարկ գրառում",
+    "savedAt": "Պահպանված է",
+    "copy": "Պատճենել",
+    "downloadHtml": "Ներբեռնել HTML",
+    "chooseRecord": "Ընտրեք գրառում ձախ կողմի ցանկից:",
+    "copied": "Պատճենված է",
+    "copyError": "Պատճենումը ձախողվեց",
+    "recordEmpty": "Գրառումը դատարկ է:",
+    "readError": "Չհաջողվեց կարդալ որոնման պատմությունը:",
+    "copyErrorLog": "Չհաջողվեց պատճենել զեկույցը:",
+    "html": {
+      "exportedAt": "Արտահանված է",
+      "savedAt": "Պահպանված է",
+      "emptyRecord": "Գրառումը դատարկ է:"
+    }
+  },
+  "api": {
+    "searchTypes": {
+      "phone": "Հեռախոս",
+      "email": "Էլ. փոստ",
+      "fio": "Ամբողջական անուն",
+      "vk": "VK ID",
+      "tg": "Telegram ID",
+      "ip": "IP",
+      "snils": "SNILS",
+      "inn": "ՀՎՀՀ (ИНН)",
+      "nick": "Մականուն",
+      "car": "Մեքենա / VIN",
+      "ok": "Odnoklassniki",
+      "fb": "Facebook"
+    },
+    "fallbackFieldKey": "Լրացուցիչ դաշտ",
+    "fallbackDatabase": "Անանուն տվյալների բազա",
+    "fallbackDescription": "Նկարագրությունը բացակայում է",
+    "report": {
+      "query": "Հարցում",
+      "searchType": "Որոնման տեսակ",
+      "results": "Համապատասխանություններ բազայում",
+      "noResults": "Արդյունքներ չկան:",
+      "databaseTitle": "Տվյալների բազա",
+      "databaseName": "Բազայի անվանումը",
+      "description": "Նկարագրություն",
+      "fields": "Դաշտեր",
+      "fieldsEmpty": "Դաշտեր չկան",
+      "generatedBy": "Ստեղծվել է",
+      "source": "Աղբյուր",
+      "exportDate": "Արտահանման ամսաթիվ"
+    },
+    "copy": {
+      "success": "Պատճենված է",
+      "error": "Պատճենումը ձախողվեց"
+    },
+    "errors": {
+      "historySave": "Չհաջողվեց պահպանել որոնման պատմությունը զեկույցներում:",
+      "missingKey": "NightSearch բանալին չի գտնվել",
+      "emptyQuery": "Մուտքագրեք հարցումը",
+      "search": "Որոնման սխալ"
+    },
+    "intro": {
+      "subtitle": "Որոնում ձեր անձնական API բանալու միջոցով:",
+      "description": "NightSearch-ը միացված է որպես առաջին հարմարեցված մատակարար:"
+    },
+    "status": {
+      "keyFound": "Բանալին գտնվել է",
+      "keyMissing": "Բանալին բացակայում է",
+      "warningAddKey": "Նախ ավելացրեք ձեր NightSearch API բանալին կարգավորումներում:"
+    },
+    "form": {
+      "searchType": "Որոնման տեսակ",
+      "query": "Հարցում",
+      "queryPlaceholder": "Մուտքագրեք էլ. փոստ, հեռախոս, մականուն, IP և այլն",
+      "search": "Որոնել",
+      "searching": "Որոնվում է..."
+    },
+    "requestInfo": {
+      "status": "Կարգավիճակ",
+      "query": "Հարցում",
+      "matches": "Համապատասխանություններ բազայում"
+    },
+    "actions": {
+      "openAll": "Բացել բոլորը",
+      "closeAll": "Փակել բոլորը",
+      "downloadHtml": "Ներբեռնել HTML",
+      "copy": "Պատճենել"
+    },
+    "fieldsCount": "Դաշտեր՝ {{count}}",
+    "emptyResults": "Արդյունքներ չկան:"
+  },
+  "exif": {
+    "notFound": "Չի գտնվել",
+    "camera": "Տեսախցիկ",
+    "lens": "Ոսպնյակ",
+    "shotDate": "Նկարահանման ամսաթիվ",
+    "iso": "ISO",
+    "exposure": "Էքսպոզիցիա",
+    "aperture": "Դիաֆրագմա",
+    "focalLength": "Կիզակետային հեռավորություն",
+    "software": "Ծրագրային ապահովում",
+    "gpsPresent": "GPS կոորդինատներ են հայտնաբերվել",
+    "processingDetected": "Հայտնաբերվել է խմբագրման ծրագիր՝ {{value}}",
+    "modifyMismatch": "Փոփոխման ամսաթիվը տարբերվում է նկարահանման ամսաթվից",
+    "cameraMissing": "Տեսախցիկի տվյալները բացակայում են",
+    "partialMetadata": "Մետատվյալները թերի են կամ հեռացված",
+    "errors": {
+      "unsupported": "Աջակցվող ձևաչափեր՝ JPEG, TIFF, PNG, HEIC/HEIF, AVIF, WEBP.",
+      "tooLarge": "Ֆայլը չափազանց մեծ է: Առավելագույնը՝ {{size}} ՄԲ:",
+      "exifMissing": "Այս ֆայլում EXIF տվյալներ չեն գտնվել:",
+      "parse": "Սխալ EXIF-ի վերլուծության ժամանակ՝ {{message}}",
+      "copy": "Պատճենումը ձախողվեց՝ {{message}}"
+    },
+    "previewUnsupported": "Այս ձևաչափի նախադիտումը կարող է հասանելի չլինել հավելվածում, բայց EXIF-ը կկարդացվի:",
+    "dropzone": {
+      "title": "Քաշեք պատկերի ֆայլն այստեղ",
+      "orClick": "կամ սեղմեք՝ ընտրելու համար",
+      "maxSize": "Առավելագույն չափսը՝ {{size}} ՄԲ"
+    },
+    "file": "Ֆայլ",
+    "analyzing": "EXIF-ը վերլուծվում է...",
+    "preview": "Նախադիտում",
+    "title": "EXIF տվյալներ ({{count}})",
+    "copyAll": "Պատճենել ամբողջը",
+    "copyAllTitle": "Պատճենել բոլոր EXIF տվյալները",
+    "copyFieldTitle": "Պատճենել {{key}}-ի արժեքը",
+    "copyFieldSuccess": "\"{{key}}\"-ի արժեքը պատճենված է",
+    "copyAllSuccess": "Բոլոր EXIF տվյալները պատճենված են",
+    "openMap": "Բացել կոորդինատները քարտեզի վրա",
+    "page": "Էջ {{current}}՝ {{total}}-ից",
+    "prevPage": "Նախորդ էջ",
+    "nextPage": "Հաջորդ էջ"
+  },
+  "about": {
+    "newsCardFallback": "Նորություններ",
+    "newsUntitled": "Նորություն",
+    "openMore": "Բացել ավելին",
+    "madeWithLove": "Պատրաստված է սիրով:",
+    "bullets": [
+      "Չի գողանում ձեր գաղտնաբառերը:",
+      "Ոչ մեկին չի հայտնում ձեր բնակության վայրը:",
+      "Չգիտի, թե ով եք դուք:"
+    ],
+    "telegram": "Այցելեք մեր Telegram ալիքը և չաթը",
+    "friends": {
+      "title": "Մեր ընկերները",
+      "subtitle": "Աջակցեք այս հրաշալի մարդկանց և նրանց նախագծերին.",
+      "channel": "ալիք"
+    },
+    "news": {
+      "title": "STALK նորություններ",
+      "previous": "Նախորդ նորություններ",
+      "next": "Հաջորդ նորություններ",
+      "loadError": "Չհաջողվեց բեռնել նորությունները:",
+      "empty": "Առայժմ նորություններ չկան:"
+    }
+  },
+  "updates": {
+    "errorFallback": "Թարմացման սխալ",
+    "available": {
+      "title": "Թարմացումը հասանելի է",
+      "version": "Նոր տարբերակ՝ {{version}}",
+      "button": "Ներբեռնել թարմացումը"
+    },
+    "downloading": {
+      "title": "Թարմացումը ներբեռնվում է"
+    },
+    "downloaded": {
+      "title": "Թարմացումը պատրաստ է",
+      "description": "Վերագործարկեք հավելվածը՝ այն տեղադրելու համար",
+      "button": "Վերագործարկել և տեղադրել"
+    },
+    "error": {
+      "title": "Թարմացման սխալ"
+    }
+  }
+}

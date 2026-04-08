@@ -1,0 +1,469 @@
+{
+  "meta": {
+    "code": "en",
+    "name": "English",
+    "nativeName": "English",
+    "intlLocale": "en-US"
+  },
+  "app": {
+    "greetings": [
+      "Welcome to STALK",
+      "Welcome back to STALK"
+    ],
+    "menu": {
+      "board": "Board",
+      "reports": "Reports",
+      "exif": "EXIF data",
+      "api": "API",
+      "settings": "Settings",
+      "about": "About"
+    },
+    "actions": {
+      "hideMenu": "Hide menu",
+      "showMenu": "Show menu",
+      "home": "Go to home screen"
+    },
+    "window": {
+      "minimize": "Minimize",
+      "maximize": "Maximize",
+      "close": "Close"
+    },
+    "errors": {
+      "componentNotFound": "Component not found"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "sound": {
+      "label": "App sounds"
+    },
+    "language": {
+      "title": "Language",
+      "label": "Interface language",
+      "hint": "Changes apply immediately. Add a new locale file in src/i18n/locales to make another language appear here."
+    },
+    "boardEdges": {
+      "title": "Board links",
+      "style": "Line style",
+      "width": "Line width",
+      "opacity": "Opacity",
+      "glow": "Glow",
+      "dashed": "Dashed",
+      "preview": "Preview",
+      "styles": {
+        "curved": "Curved",
+        "straight": "Straight"
+      }
+    },
+    "apiServices": "API services",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "Save your API key for",
+      "descriptionAfterLink": ". After saving it, the API section will appear in the menu.",
+      "statusSaved": "Key saved",
+      "statusEmpty": "Key not set",
+      "apiKeyLabel": "API key",
+      "apiKeyPlaceholder": "Enter NightSearch API key",
+      "showKey": "Show key",
+      "hideKey": "Hide key",
+      "save": "Save",
+      "delete": "Delete",
+      "savedMessage": "NightSearch key saved",
+      "emptyMessage": "Field is empty",
+      "saveError": "Failed to save key",
+      "deletedMessage": "NightSearch key deleted",
+      "deleteError": "Failed to delete key"
+    },
+    "future": {
+      "title": "Future settings",
+      "description": "This block is kept as a frame for future updates: interface, board behavior, export, hotkeys, and other parameters."
+    },
+    "reload": "Reload app"
+  },
+  "board": {
+    "entities": {
+      "person": "Person",
+      "username": "Username",
+      "email": "Email",
+      "phone": "Phone",
+      "domain": "Domain",
+      "ip": "IP",
+      "location": "Location",
+      "company": "Company",
+      "event": "Event",
+      "task": "Task",
+      "fact": "Fact",
+      "image": "Image",
+      "note": "Note",
+      "custom": "Custom"
+    },
+    "colors": {
+      "byType": "By type"
+    },
+    "statuses": {
+      "none": "No status",
+      "new": "New",
+      "in_progress": "In progress",
+      "verified": "Verified",
+      "warning": "Risk",
+      "done": "Done",
+      "archived": "Archived"
+    },
+    "messages": {
+      "notSaved": "Not saved",
+      "saved": "Saved",
+      "ready": "Ready",
+      "saveError": "Save error",
+      "sessionLoaded": "Session loaded",
+      "newSession": "New session",
+      "loadError": "Load error",
+      "autoSaved": "Auto-saved",
+      "sessionSaved": "Session saved",
+      "pngExported": "PNG exported",
+      "pngError": "PNG export error",
+      "stalkExported": ".stalk exported",
+      "stalkError": ".stalk export error",
+      "invalidProjectFile": "Invalid project file",
+      "jsonImported": "JSON imported",
+      "importError": "Import error",
+      "archiveMissingSession": "session.json was not found in the archive",
+      "invalidStalkProject": "Invalid .stalk project",
+      "stalkImported": ".stalk imported",
+      "stalkImportError": ".stalk import error",
+      "boardReset": "Board reset",
+      "imageUploaded": "Image uploaded"
+    },
+    "sidebar": {
+      "create": {
+        "title": "Create",
+        "subtitle": "Add entities"
+      },
+      "links": {
+        "title": "Links",
+        "subtitle": "Connect cards mode",
+        "hint": "Click the link button on the first card, then on the second one.",
+        "selected": "First card selected"
+      },
+      "view": {
+        "title": "View",
+        "subtitle": "Centering and zoom",
+        "center": "Center"
+      },
+      "project": {
+        "title": "Project",
+        "subtitle": "Save, import, and export",
+        "session": "Session",
+        "exportPng": "Export PNG",
+        "exportStalk": "Export .stalk",
+        "importJson": "Import JSON",
+        "importStalk": "Import .stalk",
+        "resetBoard": "Reset board"
+      },
+      "objects": {
+        "title": "Objects",
+        "subtitle": "{{count}} objects",
+        "searchPlaceholder": "Search objects",
+        "clearSearch": "Clear search",
+        "empty": "Nothing here yet",
+        "nothingFound": "Nothing found"
+      }
+    },
+    "canvas": {
+      "resetZoom": "Reset zoom to 100%"
+    },
+    "card": {
+      "noDescription": "No description",
+      "link": "Link",
+      "delete": "Delete",
+      "resize": "Resize"
+    },
+    "edges": {
+      "delete": "Delete link"
+    },
+    "properties": {
+      "title": "Properties",
+      "show": "Show properties",
+      "hide": "Hide properties",
+      "empty": "Select a card on the board to edit its data.",
+      "sections": {
+        "main": "Main",
+        "notes": "Full note",
+        "meta": "Tags and source",
+        "backlinks": "Connections",
+        "appearance": "Appearance and status",
+        "image": "Image"
+      },
+      "fields": {
+        "type": "Type",
+        "customLabel": "Custom type label",
+        "value": "Value",
+        "description": "Description",
+        "tags": "Tags",
+        "source": "Source",
+        "createdAt": "Created",
+        "updatedAt": "Updated",
+        "incoming": "Incoming",
+        "outgoing": "Outgoing",
+        "incomingEmpty": "No incoming links",
+        "outgoingEmpty": "No outgoing links",
+        "cardColor": "Card color",
+        "status": "Status",
+        "uploadImage": "Upload image",
+        "deleteObject": "Delete object"
+      },
+      "placeholders": {
+        "customLabel": "For example: Vehicle / Event / Account",
+        "value": "Enter value",
+        "description": "Enter note, attributes, links, or details",
+        "note": "Long text that can be stored separately from the short description",
+        "source": "Link, service, person, file"
+      },
+      "noteHint": "The card shows a preview. PNG export includes only what is visible on the board."
+    },
+    "intelligence": {
+      "title": "Intelligence",
+      "open": "Open intelligence",
+      "back": "Back",
+      "internet": {
+        "available": "Internet available",
+        "offline": "Offline"
+      },
+      "mode": {
+        "local": "local",
+        "internet": "internet"
+      },
+      "status": {
+        "idle": "Idle",
+        "loading": "Loading",
+        "ready": "Ready",
+        "error": "Error"
+      },
+      "actions": {
+        "title": "Actions",
+        "subtitle": "Run local or internet-based enrichment for this node",
+        "empty": "No actions available for this node type yet",
+        "items": {
+          "parsePhone": {
+            "label": "Parse phone",
+            "description": "Extract country, dial code, timezone, validity and carrier"
+          },
+          "parseDomain": {
+            "label": "Parse domain",
+            "description": "Extract root domain, subdomain and TLD"
+          },
+          "resolveDns": {
+            "label": "Resolve DNS",
+            "description": "Resolve domain to IP addresses"
+          },
+          "ipLookup": {
+            "label": "IP lookup",
+            "description": "Get geolocation and provider information"
+          }
+        }
+      },
+      "result": {
+        "title": "Result",
+        "status": "Status: {{status}}",
+        "lastAction": "Last action: {{actionId}}",
+        "loading": "Running action...",
+        "empty": "No enrichment data yet",
+        "errorAction": "Action: {{actionId}}"
+      },
+      "suggestions": {
+        "title": "Suggestions",
+        "subtitle": "Proposed next steps based on enrichment",
+        "empty": "No suggestions yet",
+        "unknown": "Unknown suggestion",
+        "metaCreateNode": "Create {{nodeType}} node",
+        "metaSetMetadata": "Save to metadata: {{key}}",
+        "fallbackCreateNode": "Create {{nodeType}}: {{value}}",
+        "fallbackSetMetadata": "Save {{key}}: {{value}}",
+        "createLocation": "Create location: {{value}}",
+        "createCompany": "Create company: {{value}}",
+        "addTimezone": "Add timezone: {{value}}",
+        "saveNormalizedPhone": "Save normalized phone: {{value}}"
+      }
+    }
+  },
+  "reports": {
+    "title": "Search history",
+    "subtitle": "Results from API searches are stored here.",
+    "clearHistory": "Clear history",
+    "searchPlaceholder": "Search history",
+    "empty": "Search history is empty.",
+    "nothingFound": "No records matched your query.",
+    "untitled": "Untitled",
+    "emptyRecord": "Empty record",
+    "savedAt": "Saved",
+    "copy": "Copy",
+    "downloadHtml": "Download HTML",
+    "chooseRecord": "Choose a record from the list on the left.",
+    "copied": "Copied",
+    "copyError": "Copy failed",
+    "recordEmpty": "Record is empty.",
+    "readError": "Failed to read search history.",
+    "copyErrorLog": "Failed to copy report.",
+    "html": {
+      "exportedAt": "Exported",
+      "savedAt": "Saved",
+      "emptyRecord": "Record is empty."
+    }
+  },
+  "api": {
+    "searchTypes": {
+      "phone": "Phone",
+      "email": "Email",
+      "fio": "Full name",
+      "vk": "VK id",
+      "tg": "Telegram id",
+      "ip": "IP",
+      "snils": "SNILS",
+      "inn": "INN",
+      "nick": "Nickname",
+      "car": "Car / VIN",
+      "ok": "Odnoklassniki",
+      "fb": "Facebook"
+    },
+    "fallbackFieldKey": "Additional field",
+    "fallbackDatabase": "Unnamed database",
+    "fallbackDescription": "Description is missing",
+    "report": {
+      "query": "Query",
+      "searchType": "Search type",
+      "results": "Database matches",
+      "noResults": "No results.",
+      "databaseTitle": "Database",
+      "databaseName": "Database name",
+      "description": "Description",
+      "fields": "Fields",
+      "fieldsEmpty": "No fields",
+      "generatedBy": "Generated by",
+      "source": "Source",
+      "exportDate": "Export date"
+    },
+    "copy": {
+      "success": "Copied",
+      "error": "Copy failed"
+    },
+    "errors": {
+      "historySave": "Failed to save search history to reports.",
+      "missingKey": "NightSearch key was not found",
+      "emptyQuery": "Enter a query",
+      "search": "Search error"
+    },
+    "intro": {
+      "subtitle": "Search through your personal API key.",
+      "description": "NightSearch is connected as the first adapted provider."
+    },
+    "status": {
+      "keyFound": "Key found",
+      "keyMissing": "Key missing",
+      "warningAddKey": "Add your NightSearch API key in settings first."
+    },
+    "form": {
+      "searchType": "Search type",
+      "query": "Query",
+      "queryPlaceholder": "Enter email, phone, nickname, IP, and so on",
+      "search": "Search",
+      "searching": "Searching..."
+    },
+    "requestInfo": {
+      "status": "Status",
+      "query": "Query",
+      "matches": "Database matches"
+    },
+    "actions": {
+      "openAll": "Expand all",
+      "closeAll": "Collapse all",
+      "downloadHtml": "Download HTML",
+      "copy": "Copy"
+    },
+    "fieldsCount": "Fields: {{count}}",
+    "emptyResults": "No results."
+  },
+  "exif": {
+    "notFound": "Not found",
+    "camera": "Camera",
+    "lens": "Lens",
+    "shotDate": "Shot date",
+    "iso": "ISO",
+    "exposure": "Exposure",
+    "aperture": "Aperture",
+    "focalLength": "Focal length",
+    "software": "Software",
+    "gpsPresent": "GPS coordinates detected",
+    "processingDetected": "Editing software detected: {{value}}",
+    "modifyMismatch": "Modification date differs from shot date",
+    "cameraMissing": "Camera data is missing",
+    "partialMetadata": "Metadata looks partial or stripped",
+    "errors": {
+      "unsupported": "Supported formats: JPEG, TIFF, PNG, HEIC/HEIF, AVIF, WEBP.",
+      "tooLarge": "File is too large. Maximum: {{size}} MB.",
+      "exifMissing": "EXIF data was not found in this file or the file does not contain any.",
+      "parse": "Error while analyzing EXIF: {{message}}",
+      "copy": "Copy failed: {{message}}"
+    },
+    "previewUnsupported": "Preview may be unavailable for this format in the app, but EXIF will still be read.",
+    "dropzone": {
+      "title": "Drop an image file here",
+      "orClick": "or click to choose one",
+      "maxSize": "Maximum size: {{size}} MB"
+    },
+    "file": "File",
+    "analyzing": "Analyzing EXIF...",
+    "preview": "Preview",
+    "title": "EXIF data ({{count}})",
+    "copyAll": "Copy all",
+    "copyAllTitle": "Copy all EXIF data",
+    "copyFieldTitle": "Copy value for {{key}}",
+    "copyFieldSuccess": "Value for \"{{key}}\" copied",
+    "copyAllSuccess": "All EXIF data copied",
+    "openMap": "Open coordinates on map",
+    "page": "Page {{current}} of {{total}}",
+    "prevPage": "Previous page",
+    "nextPage": "Next page"
+  },
+  "about": {
+    "newsCardFallback": "News",
+    "newsUntitled": "News item",
+    "openMore": "Open more",
+    "madeWithLove": "Made with love.",
+    "bullets": [
+      "Does not steal your passwords.",
+      "Does not tell anyone where you live.",
+      "Does not know who you are."
+    ],
+    "telegram": "Visit our Telegram channel and chat",
+    "friends": {
+      "title": "Our friends",
+      "subtitle": "Support these wonderful people and their projects:",
+      "channel": "channel"
+    },
+    "news": {
+      "title": "STALK news",
+      "previous": "Previous news",
+      "next": "Next news",
+      "loadError": "Failed to load news.",
+      "empty": "No news yet."
+    }
+  },
+  "updates": {
+    "errorFallback": "Update error",
+    "available": {
+      "title": "Update available",
+      "version": "New version: {{version}}",
+      "button": "Download update"
+    },
+    "downloading": {
+      "title": "Downloading update"
+    },
+    "downloaded": {
+      "title": "Update is ready",
+      "description": "Restart the app to install it",
+      "button": "Restart and install"
+    },
+    "error": {
+      "title": "Update error"
+    }
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "code": "ru",
+    "name": "Russian",
+    "nativeName": "Русский",
+    "intlLocale": "ru-RU"
+  },
+  "app": {
+    "greetings": [
+      "Добро пожаловать в STALK",
+      "С возвращением в STALK"
+    ],
+    "menu": {
+      "board": "Доска",
+      "reports": "Отчёты",
+      "exif": "EXIF данные",
+      "api": "API",
+      "settings": "Настройки",
+      "about": "О программе"
+    },
+    "actions": {
+      "hideMenu": "Скрыть меню",
+      "showMenu": "Показать меню",
+      "home": "На главный экран"
+    },
+    "window": {
+      "minimize": "Свернуть",
+      "maximize": "Развернуть",
+      "close": "Закрыть"
+    },
+    "errors": {
+      "componentNotFound": "Компонент не найден"
+    }
+  },
+  "settings": {
+    "title": "Настройки",
+    "sound": {
+      "label": "Звуки в приложении"
+    },
+    "language": {
+      "title": "Язык",
+      "label": "Язык интерфейса",
+      "hint": "Изменения применяются сразу. Добавьте новый locale-файл в src/i18n/locales, и язык появится здесь автоматически."
+    },
+    "boardEdges": {
+      "title": "Связи доски",
+      "style": "Стиль линии",
+      "width": "Толщина линии",
+      "opacity": "Прозрачность",
+      "glow": "Свечение",
+      "dashed": "Пунктир",
+      "preview": "Предпросмотр",
+      "styles": {
+        "curved": "Изогнутые",
+        "straight": "Прямые"
+      }
+    },
+    "apiServices": "API сервисы",
+    "nightSearch": {
+      "title": "NightSearch",
+      "descriptionBeforeLink": "Сохраните свой API ключ для",
+      "descriptionAfterLink": ". После сохранения в меню появится раздел API.",
+      "statusSaved": "Ключ сохранён",
+      "statusEmpty": "Ключ не задан",
+      "apiKeyLabel": "API ключ",
+      "apiKeyPlaceholder": "Введите NightSearch API key",
+      "showKey": "Показать ключ",
+      "hideKey": "Скрыть ключ",
+      "save": "Сохранить",
+      "delete": "Удалить",
+      "savedMessage": "Ключ NightSearch сохранён",
+      "emptyMessage": "Поле пустое",
+      "saveError": "Ошибка сохранения ключа",
+      "deletedMessage": "Ключ NightSearch удалён",
+      "deleteError": "Ошибка удаления ключа"
+    },
+    "future": {
+      "title": "Будущие настройки",
+      "description": "Этот блок оставлен как каркас под следующие обновления: интерфейс, поведение доски, экспорт, горячие клавиши и другие параметры."
+    },
+    "reload": "Перезагрузить приложение"
+  },
+
+  "board": {
+    "entities": {
+      "person": "Персона",
+      "username": "Юзернейм",
+      "email": "Email",
+      "phone": "Телефон",
+      "domain": "Домен",
+      "ip": "IP",
+      "location": "Локация",
+      "company": "Компания",
+      "event": "Событие",
+      "task": "Задача",
+      "fact": "Факт",
+      "image": "Изображение",
+      "note": "Заметка",
+      "custom": "Свой тип"
+    },
+    "colors": {
+      "byType": "По типу"
+    },
+    "statuses": {
+      "none": "Без статуса",
+      "new": "Новое",
+      "in_progress": "В работе",
+      "verified": "Проверено",
+      "warning": "Риск",
+      "done": "Готово",
+      "archived": "Архив"
+    },
+    "messages": {
+      "notSaved": "Не сохранено",
+      "saved": "Сохранено",
+      "ready": "Готово",
+      "saveError": "Ошибка сохранения",
+      "sessionLoaded": "Сессия загружена",
+      "newSession": "Новая сессия",
+      "loadError": "Ошибка загрузки",
+      "autoSaved": "Автосохранено",
+      "sessionSaved": "Сессия сохранена",
+      "pngExported": "PNG экспортирован",
+      "pngError": "Ошибка экспорта PNG",
+      "stalkExported": ".stalk экспортирован",
+      "stalkError": "Ошибка экспорта .stalk",
+      "invalidProjectFile": "Некорректный файл проекта",
+      "jsonImported": "JSON импортирован",
+      "importError": "Ошибка импорта",
+      "archiveMissingSession": "В архиве нет session.json",
+      "invalidStalkProject": "Некорректный .stalk проект",
+      "stalkImported": ".stalk импортирован",
+      "stalkImportError": "Ошибка импорта .stalk",
+      "boardReset": "Доска сброшена",
+      "imageUploaded": "Изображение загружено"
+    },
+    "sidebar": {
+      "create": {
+        "title": "Создать",
+        "subtitle": "Добавление объектов"
+      },
+      "links": {
+        "title": "Связи",
+        "subtitle": "Режим соединения карточек",
+        "hint": "Нажми кнопку связи на первой карточке, затем на второй.",
+        "selected": "Выбрана первая карточка"
+      },
+      "view": {
+        "title": "Вид",
+        "subtitle": "Центровка и масштаб",
+        "center": "Центр"
+      },
+      "project": {
+        "title": "Проект",
+        "subtitle": "Сохранение, импорт и экспорт",
+        "session": "Сессия",
+        "exportPng": "Экспорт PNG",
+        "exportStalk": "Экспорт .stalk",
+        "importJson": "Импорт JSON",
+        "importStalk": "Импорт .stalk",
+        "resetBoard": "Сбросить доску"
+      },
+      "objects": {
+        "title": "Объекты",
+        "subtitle": "{{count}} объектов",
+        "searchPlaceholder": "Поиск по объектам",
+        "clearSearch": "Очистить поиск",
+        "empty": "Пока пусто",
+        "nothingFound": "Ничего не найдено"
+      }
+    },
+    "canvas": {
+      "resetZoom": "Сбросить масштаб до 100%"
+    },
+    "card": {
+      "noDescription": "Нет описания",
+      "link": "Связать",
+      "delete": "Удалить",
+      "resize": "Изменить размер"
+    },
+    "edges": {
+      "delete": "Удалить связь"
+    },
+    "properties": {
+      "title": "Свойства",
+      "show": "Показать свойства",
+      "hide": "Скрыть свойства",
+      "empty": "Выбери карточку на доске, чтобы редактировать её данные.",
+      "sections": {
+        "main": "Основное",
+        "notes": "Полная заметка",
+        "meta": "Теги и источник",
+        "backlinks": "Связи",
+        "appearance": "Оформление и статус",
+        "image": "Изображение"
+      },
+      "fields": {
+        "type": "Тип",
+        "customLabel": "Название custom-типа",
+        "value": "Значение",
+        "description": "Описание",
+        "tags": "Теги",
+        "source": "Источник",
+        "createdAt": "Создано",
+        "updatedAt": "Обновлено",
+        "incoming": "Входящие",
+        "outgoing": "Исходящие",
+        "incomingEmpty": "Нет входящих связей",
+        "outgoingEmpty": "Нет исходящих связей",
+        "cardColor": "Цвет карточки",
+        "status": "Статус",
+        "uploadImage": "Загрузить изображение",
+        "deleteObject": "Удалить объект"
+      },
+      "placeholders": {
+        "customLabel": "Например: Vehicle / Event / Account",
+        "value": "Введите значение",
+        "description": "Введите заметку, атрибуты, ссылки или детали",
+        "note": "Длинный текст, который можно хранить отдельно от краткого описания",
+        "source": "Ссылка, сервис, человек, файл"
+      },
+      "noteHint": "В карточке показывается превью. В PNG попадёт только то, что видно на доске."
+    }
+  },
+
+  "reports": {
+    "title": "История поиска",
+    "subtitle": "Здесь хранятся результаты поиска из API.",
+    "clearHistory": "Очистить историю",
+    "searchPlaceholder": "Поиск по истории",
+    "empty": "История поиска пока пуста.",
+    "nothingFound": "По запросу ничего не найдено.",
+    "untitled": "Без названия",
+    "emptyRecord": "Пустая запись",
+    "savedAt": "Сохранено",
+    "copy": "Копировать",
+    "downloadHtml": "Скачать HTML",
+    "chooseRecord": "Выбери запись истории слева.",
+    "copied": "Скопировано",
+    "copyError": "Ошибка копирования",
+    "recordEmpty": "Запись пуста.",
+    "readError": "Ошибка чтения истории поиска.",
+    "copyErrorLog": "Ошибка копирования отчёта.",
+    "html": {
+      "exportedAt": "Экспортировано",
+      "savedAt": "Сохранено",
+      "emptyRecord": "Запись пуста."
+    }
+  },
+
+  "api": {
+    "searchTypes": {
+      "phone": "Телефон",
+      "email": "Email",
+      "fio": "ФИО",
+      "vk": "VK id",
+      "tg": "Telegram id",
+      "ip": "IP",
+      "snils": "СНИЛС",
+      "inn": "ИНН",
+      "nick": "Ник",
+      "car": "Авто / VIN",
+      "ok": "Одноклассники",
+      "fb": "Facebook"
+    },
+    "fallbackFieldKey": "Дополнительно",
+    "fallbackDatabase": "Без названия базы",
+    "fallbackDescription": "Описание отсутствует",
+    "report": {
+      "query": "Запрос",
+      "searchType": "Тип поиска",
+      "results": "Совпадений по базам",
+      "noResults": "Результатов нет.",
+      "databaseTitle": "База",
+      "databaseName": "Название базы",
+      "description": "Описание",
+      "fields": "Поля",
+      "fieldsEmpty": "Полей нет",
+      "generatedBy": "Сгенерировано",
+      "source": "Источник",
+      "exportDate": "Дата экспорта"
+    },
+    "copy": {
+      "success": "Скопировано",
+      "error": "Ошибка копирования"
+    },
+    "errors": {
+      "historySave": "Ошибка сохранения истории поиска в отчёты.",
+      "missingKey": "Ключ NightSearch не найден",
+      "emptyQuery": "Введите запрос",
+      "search": "Ошибка поиска"
+    },
+    "intro": {
+      "subtitle": "Поиск через пользовательский API ключ.",
+      "description": "NightSearch подключён как первый адаптированный провайдер."
+    },
+    "status": {
+      "keyFound": "Ключ найден",
+      "keyMissing": "Ключ не найден",
+      "warningAddKey": "Сначала добавь NightSearch API key в настройках."
+    },
+    "form": {
+      "searchType": "Тип поиска",
+      "query": "Запрос",
+      "queryPlaceholder": "Введите email, телефон, ник, IP и т.д.",
+      "search": "Искать",
+      "searching": "Поиск..."
+    },
+    "requestInfo": {
+      "status": "Статус",
+      "query": "Запрос",
+      "matches": "Совпадений по базам"
+    },
+    "actions": {
+      "openAll": "Раскрыть всё",
+      "closeAll": "Свернуть всё",
+      "downloadHtml": "Скачать HTML",
+      "copy": "Копировать"
+    },
+    "fieldsCount": "Полей: {{count}}",
+    "emptyResults": "Результатов нет."
+  },
+
+  "exif": {
+    "notFound": "Не найдено",
+    "camera": "Камера",
+    "lens": "Объектив",
+    "shotDate": "Дата съёмки",
+    "iso": "ISO",
+    "exposure": "Выдержка",
+    "aperture": "Диафрагма",
+    "focalLength": "Фокусное",
+    "software": "ПО",
+    "gpsPresent": "Есть GPS-координаты",
+    "processingDetected": "Обнаружено ПО обработки: {{value}}",
+    "modifyMismatch": "Дата изменения отличается от даты съёмки",
+    "cameraMissing": "Нет данных о камере",
+    "partialMetadata": "Метаданные выглядят частичными или урезанными",
+    "errors": {
+      "unsupported": "Поддерживаются JPEG, TIFF, PNG, HEIC/HEIF, AVIF, WEBP.",
+      "tooLarge": "Файл слишком большой. Максимум: {{size}} MB.",
+      "exifMissing": "EXIF-данные не найдены.",
+      "parse": "Ошибка анализа EXIF: {{message}}",
+      "copy": "Ошибка копирования: {{message}}"
+    }
+  },
+
+  "about": {
+    "newsCardFallback": "Новости",
+    "newsUntitled": "Новость",
+    "openMore": "Открыть подробнее",
+    "madeWithLove": "Сделано с любовью.",
+    "bullets": [
+      "Не крадёт твои пароли.",
+      "Не говорит никому, где ты живёшь.",
+      "Не знает, кто ты."
+    ],
+    "telegram": "Перейти в Telegram",
+    "friends": {
+      "title": "Наши друзья",
+      "subtitle": "Поддержите этих людей и их проекты:",
+      "channel": "канал"
+    },
+    "news": {
+      "title": "Новости STALK",
+      "previous": "Предыдущие",
+      "next": "Следующие",
+      "loadError": "Ошибка загрузки новостей.",
+      "empty": "Пока новостей нет."
+    }
+  },
+
+  "updates": {
+    "errorFallback": "Ошибка обновления",
+    "available": {
+      "title": "Доступно обновление",
+      "version": "Новая версия: {{version}}",
+      "button": "Скачать обновление"
+    },
+    "downloading": {
+      "title": "Скачивание обновления"
+    },
+    "downloaded": {
+      "title": "Обновление готово",
+      "description": "Перезапусти приложение",
+      "button": "Перезапустить"
+    },
+    "error": {
+      "title": "Ошибка обновления"
+    }
+  }
+}
