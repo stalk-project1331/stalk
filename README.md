@@ -1,29 +1,32 @@
-# STALK
+from pathlib import Path
 
-<div align="center">
+content = r"""<div align="center">
 
 # 🕵️ STALK
 ### OSINT Assistant Desktop Application
 
-Desktop-приложение для OSINT-задач с удобным интерфейсом, рабочей доской, инструментами анализа и мультиязычной поддержкой.
+[English](#english) | [Русский](#russian)
 
 ![Electron](https://img.shields.io/badge/Electron-desktop-2b2e3a?logo=electron)
 ![Vite](https://img.shields.io/badge/Vite-fast-purple?logo=vite)
 ![React](https://img.shields.io/badge/React-frontend-61dafb?logo=react)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-UI-38bdf8?logo=tailwindcss)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
+![Made in Georgia](https://img.shields.io/badge/Made%20in-Georgia-white?labelColor=red)
 
 </div>
 
 ---
 
+# English
+
 ## 📌 Overview
 
 **STALK** is a desktop OSINT assistant built with **Electron**, **React**, **Vite**, and **Tailwind CSS**.
 
-The project is designed as a unified environment for investigation workflows, data enrichment, quick analysis, and structured visual work inside a desktop app.
+The project is designed as a unified environment for investigation workflows, data enrichment, quick analysis, and structured visual work inside a desktop application.
 
-Instead of using multiple scattered tabs and tools, STALK brings key functionality into one interface.
+Instead of using multiple scattered tabs and utilities, **STALK** brings important OSINT-related functionality into one interface.
 
 ---
 
@@ -38,23 +41,23 @@ Instead of using multiple scattered tabs and tools, STALK brings key functionali
 - 📊 Reports-related interface
 - 🔌 API-related module
 - 📞 Phone enrichment utilities
-- 🌍 Multilanguage support via built-in i18n
+- 🌍 Built-in multilanguage support
 - 🔔 Notification window support
 
 ---
 
 ## 🧠 Core Modules
 
-The current project structure includes modules such as:
+The project currently includes modules such as:
 
-- **Board** — visual workspace for organizing and linking investigation entities
+- **Board** — visual workspace for linking and organizing investigation entities
 - **DomainInfo** — domain-related lookup and display logic
-- **ExifReader** — metadata extraction / EXIF-related functionality
+- **ExifReader** — EXIF and metadata-oriented functionality
 - **Api** — API interaction layer / UI
-- **Reports** — reporting-related view
+- **Reports** — reporting-related interface
 - **Settings** — app configuration and preferences
 - **i18n** — localization system with multiple language packs
-- **Enrichment** — enrichment actions for:
+- **Enrichment** — entity enrichment tools for:
   - domains
   - IPs
   - phone numbers
