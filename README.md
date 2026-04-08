@@ -1,4 +1,3 @@
-````markdown
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/stalk-project1331/stalk/main/assets/STALK.ico" width="96" alt="STALK logo" />
@@ -102,7 +101,6 @@ STALK/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
-````
 
 ---
 
