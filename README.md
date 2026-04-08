@@ -5,7 +5,6 @@
 # STALK
 ### OSINT Assistant Desktop Application
 
-
 ![Electron](https://img.shields.io/badge/Electron-desktop-2b2e3a?logo=electron)
 ![Vite](https://img.shields.io/badge/Vite-fast-purple?logo=vite)
 ![React](https://img.shields.io/badge/React-frontend-61dafb?logo=react)
@@ -102,10 +101,3 @@ STALK/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
-
----
-
-## License
-
-Licensed under the GNU AGPL v3.0.  
-Copyright (C) 2026 Luka / [stalk.ge](https://stalk.ge)
