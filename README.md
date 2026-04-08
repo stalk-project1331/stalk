@@ -1,3 +1,4 @@
+````markdown
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/stalk-project1331/stalk/main/assets/STALK.ico" width="96" alt="STALK logo" />
@@ -101,3 +102,25 @@ STALK/
 ├── postcss.config.js
 ├── tailwind.config.js
 └── vite.config.js
+````
+
+---
+
+## 👤 Author
+
+**Luka**
+
+* Telegram: [@nonetypeuser](https://t.me/nonetypeuser)
+* Telegram channel: [@cyberstalker007](https://t.me/cyberstalker007)
+* Email: [admin@stalk.ge](mailto:admin@stalk.ge)
+* Website: [stalk.ge](https://stalk.ge)
+
+---
+
+## License
+
+Licensed under the GNU Affero General Public License v3.0.
+Copyright (C) 2026 Luka / [stalk.ge](https://stalk.ge)
+
+```
+```
