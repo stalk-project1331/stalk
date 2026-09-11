@@ -35,7 +35,7 @@ jobs:
           rm -rf snap-root
           mkdir -p snap-root/meta dist
           cp -a dist/linux-unpacked/. snap-root/
-          printf '%s\n' '#!/bin/sh' 'exec "$SNAP/STALK" --ozone-platform=x11 --no-sandbox "$@"' > snap-root/command.sh
+          printf '%s\n' '#!/bin/sh' 'exec "$SNAP/stalk" --ozone-platform=x11 --no-sandbox "$@"' > snap-root/command.sh
           chmod +x snap-root/command.sh
           cat > snap-root/meta/snap.yaml <<'EOF'
           name: stalk
