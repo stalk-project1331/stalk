@@ -102,5 +102,31 @@
       "owner": "stalk-project1331",
       "repo": "stalk"
     }
+  },
+  "overrides": {
+    "app-builder-lib": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "builder-util": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "builder-util-runtime": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "dmg-builder": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "electron-builder": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "electron-builder-squirrel-windows": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "electron-publish": {
+      "builder-util-runtime": "9.7.0"
+    },
+    "electron-updater": {
+      "builder-util-runtime": "9.7.0"
+    }
   }
 }
