@@ -5,8 +5,9 @@ const isDev = !app.isPackaged;
 const isSnapLinux = process.platform === 'linux' && Boolean(process.env.SNAP);
 
 if (isSnapLinux) {
-  app.disableHardwareAcceleration();
+  app.commandLine.appendSwitch('disable-gpu');
   app.commandLine.appendSwitch('ozone-platform', 'x11');
+  app.disableHardwareAcceleration();
 }
 
 let mainWindow = null;
