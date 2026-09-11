@@ -45,6 +45,8 @@ jobs:
           grade: stable
           confinement: classic
           base: core20
+          architectures:
+            - amd64
           apps:
             stalk:
               command: command.sh
