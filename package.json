@@ -86,13 +86,11 @@
       "confinement": "classic",
       "grade": "stable",
       "executableArgs": [
-        "--disable-gpu",
         "--ozone-platform=x11",
         "--no-sandbox"
       ],
       "environment": {
-        "ELECTRON_OZONE_PLATFORM_HINT": "x11",
-        "ELECTRON_DISABLE_GPU": "1"
+        "ELECTRON_OZONE_PLATFORM_HINT": "x11"
       },
       "publish": [
         "github"
