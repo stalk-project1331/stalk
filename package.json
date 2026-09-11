@@ -49,6 +49,7 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
+      "assets/**/*",
       "package.json",
       "!**/*.map",
       "!**/src/**",
@@ -84,6 +85,10 @@
     "snap": {
       "confinement": "classic",
       "grade": "stable",
+      "environment": {
+        "ELECTRON_OZONE_PLATFORM_HINT": "x11",
+        "ELECTRON_DISABLE_GPU": "1"
+      },
       "publish": [
         "github"
       ]
