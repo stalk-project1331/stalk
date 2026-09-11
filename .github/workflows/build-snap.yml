@@ -33,10 +33,22 @@ jobs:
       - name: Assemble direct-launch Snap
         run: |
           rm -rf snap-root
-          mkdir -p snap-root/meta dist
+          mkdir -p snap-root/meta/gui dist
           cp -a dist/linux-unpacked/. snap-root/
+          cp assets/STALK.png snap-root/meta/gui/stalk.png
           printf '%s\n' '#!/bin/sh' 'exec "$SNAP/stalk" --ozone-platform=x11 --no-sandbox "$@"' > snap-root/command.sh
           chmod +x snap-root/command.sh
+          cat > snap-root/meta/gui/stalk.desktop <<'EOF'
+          [Desktop Entry]
+          Name=STALK
+          Comment=OSINT assistant
+          Exec=stalk %U
+          Icon=${SNAP}/meta/gui/stalk.png
+          Terminal=false
+          Type=Application
+          Categories=Utility;
+          StartupWMClass=STALK
+          EOF
           cat > snap-root/meta/snap.yaml <<'EOF'
           name: stalk
           version: '0.3.0'
@@ -50,6 +62,7 @@ jobs:
           apps:
             stalk:
               command: command.sh
+              desktop: meta/gui/stalk.desktop
           EOF
 
       - name: Pack Snap
