@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html,
+  body,
+  #root {
+    background-color: transparent;
+  }
+}
+
+
+html, body, #root {
+  scrollbar-width: none;    
+  -ms-overflow-style: none;  
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  clip-path: inset(0 round 18px);
+}
+
+#root,
+.app-shell {
+  border-radius: 18px;
+  overflow: hidden;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  display: none;             
+}
+
+
+.no-scrollbar {
+  scrollbar-width: none;     
+  -ms-overflow-style: none;   
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;            
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes boardCardEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.board-card-enter {
+  animation: boardCardEnter 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.welcome-particles {
+  background-image:
+    radial-gradient(circle at 18% 32%, rgba(255, 255, 255, 0.75) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 74% 68%, rgba(255, 255, 255, 0.55) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1.5px);
+  background-size: 180px 160px, 230px 210px, 22px 22px;
+  opacity: 0.09;
+  animation: welcomeParticlesFloat 11s linear infinite;
+}
+
+input,
+textarea,
+select {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.welcome-particles-drift {
+  background-image:
+    radial-gradient(circle at 32% 72%, rgba(125, 180, 255, 0.8) 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.7) 0 1px, transparent 2px);
+  background-size: 260px 220px, 310px 270px;
+  opacity: 0.08;
+  animation-duration: 17s;
+  animation-direction: reverse;
+}
+
+.projects-particles {
+  opacity: 0.12;
+  background-size: 280px 245px, 360px 315px, 34px 34px;
+  background-position: 20px -10px, -55px 35px, 0 0;
+  animation-duration: 14s;
+}
+
+.projects-particles-drift {
+  opacity: 0.12;
+  background-size: 430px 360px, 520px 440px;
+  background-position: -80px 40px, 70px -60px;
+  animation-duration: 21s;
+}
+
+@keyframes welcomeParticlesFloat {
+  0%, 100% {
+    transform: translate3d(-2%, 1%, 0) scale(1.02);
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    transform: translate3d(2%, -2%, 0) scale(1.08);
+    background-position: 90px -60px, -70px 80px, 44px -32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .board-card-enter {
+    animation: none;
+  }
+
+  .welcome-particles {
+    animation: none;
+  }
+}
