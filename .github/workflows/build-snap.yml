@@ -62,7 +62,6 @@ jobs:
           apps:
             stalk:
               command: command.sh
-              desktop: meta/gui/stalk.desktop
           EOF
 
       - name: Pack Snap
