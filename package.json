@@ -78,6 +78,7 @@
           ]
         }
       ],
+      "icon": "assets/STALK.png",
       "category": "Utility"
     },
     "snap": {
