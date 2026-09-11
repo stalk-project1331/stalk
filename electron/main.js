@@ -2,6 +2,12 @@ const { app, BrowserWindow, ipcMain, Menu, screen, shell } = require('electron')
 const path = require('path');
 
 const isDev = !app.isPackaged;
+const isSnapLinux = process.platform === 'linux' && Boolean(process.env.SNAP);
+
+if (isSnapLinux) {
+  app.disableHardwareAcceleration();
+  app.commandLine.appendSwitch('ozone-platform', 'x11');
+}
 
 let mainWindow = null;
 let notifWindow = null;
