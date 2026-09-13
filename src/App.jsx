@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SplashScreen from './SplashScreen';
 import MainLayout from './MainLayout';
 import UpdateBanner from './UpdateBanner';

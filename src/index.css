@@ -27,6 +27,15 @@ html, body, #root {
   border-radius: 18px;
   overflow: hidden;
 }
+
+.menu-item {
+  color: #d1d5db;
+}
+
+.menu-item-active {
+  color: #d1d5db;
+}
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
 #root::-webkit-scrollbar {

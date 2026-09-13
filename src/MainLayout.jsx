@@ -1,10 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Settings from './Settings.jsx';
-import Board from './Board.jsx';
-import ExifReader from './ExifReader.jsx';
-import About from './About.jsx';
-import Projects from './Projects.jsx';
 import { useI18n } from './i18n';
 import {
   NetworkIcon,
@@ -22,6 +17,12 @@ import {
   deleteProject,
   renameProject
 } from './projectStore';
+
+const Settings = lazy(() => import('./Settings.jsx'));
+const Board = lazy(() => import('./Board.jsx'));
+const ExifReader = lazy(() => import('./ExifReader.jsx'));
+const About = lazy(() => import('./About.jsx'));
+const Projects = lazy(() => import('./Projects.jsx'));
 
 function TitleBar() {
   return (
@@ -136,9 +137,7 @@ function WindowControls() {
 function MenuItem({ icon, label, active, onClick }) {
   return (
     <button
-      className={`flex h-12 w-12 items-center justify-center rounded-lg ${
-        active ? 'text-white' : 'text-gray-300 hover:bg-gray-700/60'
-      } transition-colors duration-150 ease-in-out focus:outline-none select-none`}
+      className="menu-item flex h-12 w-12 items-center justify-center rounded-lg transition-colors duration-150 ease-in-out focus:outline-none select-none"
       onClick={onClick}
       title={label}
       aria-label={label}
@@ -156,6 +155,7 @@ export default function MainLayout() {
   const [activeProjectId, setActiveProjectIdState] = useState(getActiveProjectId);
   const greetings = t('app.greetings');
   const [greetIndex, setGreetIndex] = useState(0);
+  const [isPresentationMode, setIsPresentationMode] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 500);
@@ -259,7 +259,12 @@ export default function MainLayout() {
           </motion.div>
         );
       case 'board':
-        return <Board key="board" />;
+        return (
+          <Board
+            key="board"
+            onPresentationModeChange={setIsPresentationMode}
+          />
+        );
       case 'projects':
         return (
           <Projects
@@ -347,11 +352,19 @@ export default function MainLayout() {
               className="absolute inset-0 bg-[#121212] z-10 pointer-events-none"
             />
           )}
-          {renderActiveComponent()}
+          <Suspense
+            fallback={
+              <div className="flex h-full items-center justify-center text-gray-500">
+                Loading...
+              </div>
+            }
+          >
+            {renderActiveComponent()}
+          </Suspense>
         </AnimatePresence>
       </motion.main>
 
-      <nav
+      {!isPresentationMode && <nav
         className="absolute bottom-0 left-0 right-0 z-30 flex h-20 items-center justify-center gap-1 bg-transparent px-4"
         style={{ WebkitAppRegion: 'no-drag' }}
       >
@@ -374,15 +387,13 @@ export default function MainLayout() {
                 ))}
         <button
           onClick={() => setActiveTab('projects')}
-          className={`flex h-12 w-12 items-center justify-center rounded-lg transition-colors ${
-            activeTab === 'projects' ? 'text-white' : 'text-gray-300 hover:bg-gray-700/60'
-          }`}
+          className="menu-item flex h-12 w-12 items-center justify-center rounded-lg transition-colors"
           title={t('app.projects.title')}
           aria-label={t('app.projects.title')}
         >
           <FolderKanbanIcon className="h-5 w-5" />
         </button>
-      </nav>
+      </nav>}
     </div>
   );
 }

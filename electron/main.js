@@ -5,9 +5,7 @@ const isDev = !app.isPackaged;
 const isSnapLinux = process.platform === 'linux' && Boolean(process.env.SNAP);
 
 if (isSnapLinux) {
-  app.commandLine.appendSwitch('disable-gpu');
   app.commandLine.appendSwitch('ozone-platform', 'x11');
-  app.disableHardwareAcceleration();
 }
 
 let mainWindow = null;
@@ -90,11 +88,15 @@ function createWindow() {
     mainWindow.loadFile(path.join(__dirname, '../dist/index.html'));
   }
 
-  mainWindow.once('ready-to-show', () => {
+  const showMainWindow = () => {
     if (!mainWindow || mainWindow.isDestroyed() || isQuitting) return;
+    if (mainWindow.isVisible()) return;
     mainWindow.show();
     sendFullscreenState();
-  });
+  };
+
+  mainWindow.webContents.once('did-finish-load', showMainWindow);
+  mainWindow.once('ready-to-show', showMainWindow);
 
   mainWindow.on('enter-full-screen', () => {
     sendFullscreenState();

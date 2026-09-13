@@ -211,7 +211,9 @@
       }
     },
     "canvas": {
-      "resetZoom": "Reset zoom to 100%"
+      "resetZoom": "Reset zoom to 100%",
+      "presentationMode": "Presentation mode",
+      "exitPresentationMode": "Exit presentation mode (Esc)"
     },
     "card": {
       "noDescription": "No description",

@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Maximize2, Minimize2 } from 'lucide-react';
 import BoardEdgeLayer from './BoardEdgeLayer.jsx';
 import BoardNodeCard from './BoardNodeCard.jsx';
 import { useI18n } from '../i18n';
@@ -16,6 +17,8 @@ export default function BoardCanvas({
   animateViewport,
   showZoomIndicator,
   onResetZoom,
+  isPresentationMode,
+  onTogglePresentationMode,
   selectedNodeId,
   linkStartId,
   onNodeMouseDown,
@@ -105,6 +108,30 @@ export default function BoardCanvas({
           title={t('board.canvas.resetZoom')}
         >
           {Math.round(canvasScale * 100)}%
+        </button>
+      )}
+
+      {!isExportingPng && (
+        <button
+          type="button"
+          onClick={onTogglePresentationMode}
+          className="absolute bottom-3 right-3 z-20 flex h-8 w-8 items-center justify-center rounded-md bg-[#242424]/90 text-gray-400 shadow-lg backdrop-blur-sm transition-all duration-200 hover:bg-[#2d2d2d]/95 hover:text-gray-300 focus:border-0 focus:outline-none focus:ring-0"
+          title={t(
+            isPresentationMode
+              ? 'board.canvas.exitPresentationMode'
+              : 'board.canvas.presentationMode'
+          )}
+          aria-label={t(
+            isPresentationMode
+              ? 'board.canvas.exitPresentationMode'
+              : 'board.canvas.presentationMode'
+          )}
+        >
+          {isPresentationMode ? (
+            <Minimize2 className="h-4 w-4" />
+          ) : (
+            <Maximize2 className="h-4 w-4" />
+          )}
         </button>
       )}
     </div>

@@ -110,7 +110,7 @@ function ensureNodeEnrichment(node) {
   };
 }
 
-export default function Board() {
+export default function Board({ onPresentationModeChange }) {
   const { t } = useI18n();
   const boardRef = useRef(null);
   const exportSceneRef = useRef(null);
@@ -140,6 +140,31 @@ export default function Board() {
     typeof navigator === 'undefined' ? true : navigator.onLine
   );
   const [propertiesPanelMode, setPropertiesPanelMode] = useState('details');
+  const [isPresentationMode, setIsPresentationMode] = useState(false);
+
+  const togglePresentationMode = useCallback(() => {
+    setIsPresentationMode((previous) => !previous);
+  }, []);
+
+  useEffect(() => {
+    onPresentationModeChange?.(isPresentationMode);
+  }, [isPresentationMode, onPresentationModeChange]);
+
+  useEffect(
+    () => () => onPresentationModeChange?.(false),
+    [onPresentationModeChange]
+  );
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape' && isPresentationMode) {
+        setIsPresentationMode(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isPresentationMode]);
 
   const stopViewportTransition = useCallback(() => {
     if (viewportTransitionTimerRef.current) {
@@ -1039,24 +1064,30 @@ export default function Board() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
-      className="mt-8 mb-8 h-[calc(100vh-140px)] rounded-lg shadow-xl overflow-hidden flex"
+      className={`relative mt-8 mb-8 h-[calc(100vh-140px)] rounded-lg shadow-xl overflow-hidden flex transition-[margin,height,border-radius] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        isPresentationMode
+          ? 'fixed inset-0 z-40 m-0 h-screen rounded-none'
+          : ''
+      }`}
     >
-      <BoardSidebar
-        activeSidebarSection={activeSidebarSection}
-        onToggleSidebarSection={toggleSidebarSection}
-        onAddNode={handleAddNode}
-        onExportPng={exportPng}
-        onExportStalk={exportStalk}
-        stalkImportInputRef={stalkImportInputRef}
-        onImportStalk={handleImportStalk}
-        onResetBoard={resetBoard}
-        searchQuery={searchQuery}
-        onSearchQueryChange={setSearchQuery}
-        nodes={nodes}
-        filteredNodes={filteredNodes}
-        selectedNodeId={selectedNodeId}
-        onCenterOnNode={centerOnNode}
-      />
+      {!isPresentationMode && (
+        <BoardSidebar
+          activeSidebarSection={activeSidebarSection}
+          onToggleSidebarSection={toggleSidebarSection}
+          onAddNode={handleAddNode}
+          onExportPng={exportPng}
+          onExportStalk={exportStalk}
+          stalkImportInputRef={stalkImportInputRef}
+          onImportStalk={handleImportStalk}
+          onResetBoard={resetBoard}
+          searchQuery={searchQuery}
+          onSearchQueryChange={setSearchQuery}
+          nodes={nodes}
+          filteredNodes={filteredNodes}
+          selectedNodeId={selectedNodeId}
+          onCenterOnNode={centerOnNode}
+        />
+      )}
 
       <div className="min-w-0 flex-1 flex">
         <BoardCanvas
@@ -1072,6 +1103,8 @@ export default function Board() {
           animateViewport={animateViewport}
           showZoomIndicator={showZoomIndicator}
           onResetZoom={handleResetZoom}
+          isPresentationMode={isPresentationMode}
+          onTogglePresentationMode={togglePresentationMode}
           selectedNodeId={selectedNodeId}
           linkStartId={linkStartId}
           onNodeMouseDown={handleNodeMouseDown}
@@ -1081,24 +1114,26 @@ export default function Board() {
           onDeleteEdge={handleDeleteEdge}
         />
 
-        <BoardPropertiesPanel
-          isPropertiesOpen={isPropertiesOpen}
-          onTogglePropertiesPanel={() => setIsPropertiesOpen((prev) => !prev)}
-          saveStatus={t(saveStatusKey)}
-          selectedNode={selectedNode}
-          onUpdateSelectedType={handleUpdateSelectedType}
-          onUpdateSelectedNode={handleUpdateSelectedNode}
-          selectedNodeBacklinks={selectedNodeBacklinks}
-          onCenterOnNode={centerOnNode}
-          imageInputRef={imageInputRef}
-          onImageUpload={handleImageUpload}
-          onDeleteNode={handleDeleteNode}
-          hasInternet={hasInternet}
-          onRunSelectedNodeAction={handleRunSelectedNodeAction}
-          mode={propertiesPanelMode}
-          onOpenIntelligence={handleOpenIntelligence}
-          onBackToDetails={handleBackToDetails}
-        />
+        {!isPresentationMode && (
+          <BoardPropertiesPanel
+            isPropertiesOpen={isPropertiesOpen}
+            onTogglePropertiesPanel={() => setIsPropertiesOpen((prev) => !prev)}
+            saveStatus={t(saveStatusKey)}
+            selectedNode={selectedNode}
+            onUpdateSelectedType={handleUpdateSelectedType}
+            onUpdateSelectedNode={handleUpdateSelectedNode}
+            selectedNodeBacklinks={selectedNodeBacklinks}
+            onCenterOnNode={centerOnNode}
+            imageInputRef={imageInputRef}
+            onImageUpload={handleImageUpload}
+            onDeleteNode={handleDeleteNode}
+            hasInternet={hasInternet}
+            onRunSelectedNodeAction={handleRunSelectedNodeAction}
+            mode={propertiesPanelMode}
+            onOpenIntelligence={handleOpenIntelligence}
+            onBackToDetails={handleBackToDetails}
+          />
+        )}
       </div>
 
       <BoardExportScene
