@@ -1,13 +1,16 @@
-name: Build Snap
+name: Build and Release
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  snap:
+  linux:
+    name: Build Linux AppImage
     runs-on: ubuntu-22.04
 
     steps:
@@ -23,53 +26,65 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Snapcraft
-        run: |
-          sudo snap install snapcraft --classic --channel=8.x/stable
+      - name: Build AppImage
+        run: npm run build && npx electron-builder --linux AppImage --x64
 
-      - name: Build Electron application bundle
-        run: npm run build && npx electron-builder --linux dir --x64
-
-      - name: Assemble direct-launch Snap
-        run: |
-          rm -rf snap-root
-          mkdir -p snap-root/meta/gui dist
-          cp -a dist/linux-unpacked/. snap-root/
-          cp assets/STALK.png snap-root/meta/gui/stalk.png
-          printf '%s\n' '#!/bin/sh' 'exec "$SNAP/stalk" --ozone-platform=x11 --no-sandbox "$@"' > snap-root/command.sh
-          chmod +x snap-root/command.sh
-          cat > snap-root/meta/gui/stalk.desktop <<'EOF'
-          [Desktop Entry]
-          Name=STALK
-          Comment=OSINT assistant
-          Exec=stalk %U
-          Icon=${SNAP}/meta/gui/stalk.png
-          Terminal=false
-          Type=Application
-          Categories=Utility;
-          StartupWMClass=STALK
-          EOF
-          cat > snap-root/meta/snap.yaml <<'EOF'
-          name: stalk
-          version: '0.3.0'
-          summary: STALK
-          description: OSINT assistant
-          grade: stable
-          confinement: classic
-          base: core20
-          architectures:
-            - amd64
-          apps:
-            stalk:
-              command: command.sh
-          EOF
-
-      - name: Pack Snap
-        run: snapcraft pack snap-root --output dist
-
-      - name: Upload Snap artifact
+      - name: Upload Linux artifact
         uses: actions/upload-artifact@v4
         with:
-          name: STALK-snap
-          path: dist/*.snap
+          name: STALK-linux
+          path: dist/*.AppImage
           if-no-files-found: error
+
+  windows:
+    name: Build Windows installer
+    runs-on: windows-2022
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows installer
+        run: npm run build && npx electron-builder --win nsis --x64
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: STALK-windows
+          path: dist/*.exe
+          if-no-files-found: error
+
+  release:
+    name: Create GitHub Release
+    needs:
+      - linux
+      - windows
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: STALK-linux
+          path: release
+
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: STALK-windows
+          path: release
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/*
+          generate_release_notes: true
