@@ -27,7 +27,8 @@ jobs:
         run: npm ci
 
       - name: Build AppImage
-        run: npm run build && npx electron-builder --linux AppImage --x64
+        run: npm run build && npx electron-builder --linux AppImage --x64 --publish never
+
 
       - name: Upload Linux artifact
         uses: actions/upload-artifact@v4
@@ -54,7 +55,8 @@ jobs:
         run: npm ci
 
       - name: Build Windows installer
-        run: npm run build && npx electron-builder --win nsis --x64
+        run: npm run build && npx electron-builder --win nsis --x64 --publish never
+
 
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
