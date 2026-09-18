@@ -21,6 +21,22 @@ function isValidIp(value) {
   return isValidIpv4(value) || isValidIpv6(value);
 }
 
+function isPrivateOrReservedIp(value) {
+  if (isValidIpv4(value)) {
+    const [a, b] = value.split('.').map(Number);
+    if (a === 10) return true;
+    if (a === 127) return true;
+    if (a === 0) return true;
+    if (a === 169 && b === 254) return true;
+    if (a === 172 && b >= 16 && b <= 31) return true;
+    if (a === 192 && b === 168) return true;
+    return false;
+  }
+
+  const lower = value.toLowerCase();
+  return lower === '::1' || lower === '::' || lower.startsWith('fe80:') || lower.startsWith('fc') || lower.startsWith('fd');
+}
+
 function buildIpSuggestions(data) {
   const suggestions = [];
 
